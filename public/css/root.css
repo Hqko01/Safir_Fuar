@@ -1,0 +1,39 @@
+:root {
+    --text-color-white: #fffaef;
+    --text-color-white-2: #fff;
+    --text-color-black: #0c0c0c;
+    --footer-name-color: #567e8a;
+    --input-bg-color: #e4f1f5;
+    --input-submit-color: #002c4f;
+    --error: #ffafaf;
+    --ok: #84ff84;
+
+    --card-1: #002c4f;
+    --card-2: #507588;
+    --card-3: #e4f1f5;
+}
+
+@font-face {
+    font-family: "Codec pro";
+    src: url('/assets/fonts/CodecPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roxbor";
+    src: url('/assets/fonts/Roxborough-CF.ttf');
+}
+
+@font-face {
+    font-family: "Pierson";
+    src: url('/assets/fonts/pierson-regular.ttf');
+}
+
+@font-face {
+    font-family: "Glacial";
+    src: url('/assets/fonts/glacial.otf');
+}
+
+@font-face {
+    font-family: "Tan-nimbus";
+    src: url('/assets/fonts/tan-nimbus.ttf');
+}

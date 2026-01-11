@@ -1,0 +1,723 @@
+.sff-contact-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.sff-contact-slider .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sff-contact-slider .background .effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(70%);
+    z-index: 1;
+}
+
+.sff-contact-slider .background .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sff-contact-slider .background .img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sff-contact-slider .text-area {
+    z-index: 2;
+}
+
+.sff-contact-slider .text-area h1 {
+    font-family: "Codec pro", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color-white);
+}
+
+.sff-contact-slider .absolute-text-area {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 1pc 2pc;
+    z-index: 3;
+    border-top-right-radius: 2pc;
+}
+
+.sff-contact-slider .absolute-text-area h3 {
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    margin: .4pc 0;
+    font-weight: bold;
+    color: var(--text-color-black);
+}
+
+.sff-contact-slider .absolute-text-area p {
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color-black);
+}
+
+@media only screen and (max-width: 550px) {
+    .sff-contact-slider .text-area h1 {
+        font-size: 2.7rem;
+        text-align: center;
+        padding: 0 1pc;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sff-contact-slider {
+        height: 350px;
+    }
+}
+
+
+/* --Post mail */
+
+.sff-post-mail {
+    display: flex;
+    flex-direction: row;
+    gap: 2pc;
+    position: relative;
+    width: 80%;
+    max-width: 1100px;
+    height: 400px;
+    margin: 6pc auto;
+}
+
+.sff-post-mail .post {
+    flex: 1.5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1pc;
+    height: 100%;
+}
+
+.sff-post-mail .post>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sff-post-mail .post>div>input {
+    border: none;
+    outline: 2px solid transparent;
+    background-color: var(--input-bg-color);
+    font-family: "Quicksand", serif;
+    width: 100%;
+    padding: 1pc 1pc;
+    border-radius: .5pc;
+    font-size: .9rem;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.sff-post-mail .post>div>textarea {
+    border: none;
+    outline: 2px solid transparent;
+    background-color: var(--input-bg-color);
+    font-family: "Quicksand", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    border-radius: .5pc;
+    padding: 1pc;
+    resize: none;
+}
+
+.sff-post-mail .post>div>input.error,
+.sff-post-mail .post>div>textarea.error {
+    outline-color: var(--error);
+}
+
+.sff-post-mail .post .email {
+    align-items: end;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.sff-post-mail .post .tel {
+    align-items: end;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.sff-post-mail .post .name {
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.sff-post-mail .post .message {
+    grid-column: 1 / 4;
+    grid-row: 3 / 7;
+    height: 100%;
+}
+
+.sff-post-mail .post .policy {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: .5pc;
+    padding: 0 .5pc;
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+    z-index: 2;
+    border-bottom: 2px solid transparent;
+    transition: .2s ease;
+}
+
+.sff-post-mail .post .policy.error {
+    border-color: var(--error);
+}
+
+.sff-post-mail .post .policy .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sff-post-mail .post .policy .checkbox input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.sff-post-mail .post .policy .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sff-post-mail .post .policy .text p {
+    font-family: "Quicksand", serif;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.sff-post-mail .post .policy .text info {
+    text-decoration: underline;
+    color: var(--input-submit-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sff-post-mail .post .policy .text info::before {
+    content: "Girilen bilgiler Liriandev aracılığı ile Safir Fuar'a E-mail gönderilecektir. Herhangi bir kayıt olmayacaktır.";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateY(-110%) translateX(-50%);
+    background-color: var(--input-submit-color);
+    padding: .5pc;
+    border-radius: .5pc;
+    font-family: "Montserrat", serif;
+    font-size: .7rem;
+    color: var(--text-color-white);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease;
+}
+
+.sff-post-mail .post .policy .text info:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sff-post-mail .post .submit {
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 8 / 9;
+}
+
+.sff-post-mail .post .submit .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7pc 2.5pc;
+    background-color: var(--input-submit-color);
+    border-radius: .5pc;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s ease;
+}
+
+.sff-post-mail .post .submit .button:hover {
+    transform: translateY(-5%);
+}
+
+.sff-post-mail .post .submit .button:active {
+    transition: .1s ease;
+    transform: translateY(0%);
+}
+
+.sff-post-mail .post .submit .load,
+.sff-post-mail .post .submit .error,
+.sff-post-mail .post .submit .completed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--input-bg-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease;
+    border-radius: .5pc;
+}
+
+.sff-post-mail .post .submit.error .error {
+    background-color: var(--error);
+}
+
+.sff-post-mail .post .submit .button::after {
+    content: "Mail gönderilemedi, Lütfen arayın.";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(1pc, -50%);
+    background-color: var(--input-submit-color);
+    padding: .5pc 1pc;
+    border-radius: .5pc;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    text-wrap: nowrap;
+    color: var(--text-color-white);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sff-post-mail .post .submit.error .button::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sff-post-mail .post .submit.completed .completed {
+    background-color: var(--ok);
+}
+
+.sff-post-mail .post .submit.loading .load,
+.sff-post-mail .post .submit.error .error,
+.sff-post-mail .post .submit.completed .completed {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sff-post-mail .post .submit .load svg,
+.sff-post-mail .post .submit .error svg,
+.sff-post-mail .post .submit .completed svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    animation: loading 1.4s ease infinite;
+}
+
+.sff-post-mail .post .submit.error .error svg,
+.sff-post-mail .post .submit.completed .completed svg {
+    animation: none;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sff-post-mail .post .submit.error .error svg path {
+    fill: var(--text-color-white);
+}
+
+.sff-post-mail .post .submit.completed .completed svg path {
+    fill: var(--text-color-white);
+}
+
+.sff-post-mail .post .submit p {
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color-white);
+}
+
+.sff-post-mail .ss {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    border-radius: .5pc;
+    overflow: hidden;
+}
+
+.sff-post-mail .ss .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sff-post-mail .ss .background .effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(86, 126, 138, 0.36);
+    backdrop-filter: brightness(90%);
+    z-index: 1;
+}
+
+.sff-post-mail .ss .background .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sff-post-mail .ss .background .img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sff-post-mail .ss .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 2pc;
+    gap: 1pc;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.sff-post-mail .ss .text-area h1 {
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    color: var(--text-color-white-2);
+    font-size: 2.6rem;
+}
+
+.sff-post-mail .ss .text-area .ss-output {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5pc;
+    width: 100%;
+}
+
+.sff-post-mail .ss .text-area .ss-output p {
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color-white-2);
+}
+
+.sff-post-mail .ss .text-area .router {
+    background-color: var(--input-submit-color);
+    padding: .7pc 2pc;
+    border-radius: .5pc;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s ease;
+}
+
+.sff-post-mail .ss .text-area .router:hover {
+    transform: translateY(-5%);
+}
+
+.sff-post-mail .ss .text-area .router:active {
+    transform: translateY(0%);
+}
+
+.sff-post-mail .ss .text-area .router p {
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color-white-2);
+}
+
+@media only screen and (max-width: 900px) {
+    .sff-post-mail {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .sff-post-mail {
+        gap: 1pc;
+    }
+
+    .sff-post-mail .ss .text-area {
+        padding: 2pc 1pc;
+    }
+
+    .sff-post-mail .ss .text-area h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sff-post-mail {
+        width: 100%;
+        padding: 0 1pc;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .sff-post-mail {
+        flex-direction: column-reverse;
+        height: max-content;
+        width: 80%;
+        padding: 0;
+    }
+
+    .sff-post-mail .post .submit .button {
+        width: 100%;
+        padding: 1pc 0;
+    }
+
+    .sff-post-mail .ss .text-area {
+        text-align: center;
+        padding: 1pc;
+    }
+
+    .sff-post-mail .ss .text-area .ss-output {
+        align-items: center;
+    }
+
+    .sff-post-mail .ss .text-area .ss-output p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sff-post-mail {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sff-post-mail {
+        width: 100%;
+        padding: 0 .5pc;
+    }
+
+    .sff-post-mail .post {
+        gap: .5pc;
+    }
+}
+
+/* --Contact cards */
+
+.sff-contact-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2pc;
+    width: 80%;
+    max-width: 1400px;
+    height: 250px;
+    margin: 6pc auto;
+}
+
+.sff-contact-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1pc;
+    padding: 2pc;
+    aspect-ratio: 1.3 / 1;
+    border-radius: .5pc;
+}
+
+.sff-contact-cards .card:nth-child(1) {
+    background-color: var(--card-1);
+    color: var(--text-color-white);
+}
+
+.sff-contact-cards .card:nth-child(2) {
+    background-color: var(--card-2);
+    color: var(--text-color-white);
+}
+
+.sff-contact-cards .card:nth-child(3) {
+    background-color: var(--card-3);
+    color: var(--text-color-black);
+}
+
+.sff-contact-cards .card>.icon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+.sff-contact-cards .card .icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sff-contact-cards .card .icon svg path {
+    fill: var(--card-3);
+}
+
+.sff-contact-cards .card:nth-child(3) .icon svg path {
+    fill: var(--card-1);
+}
+
+.sff-contact-cards .card .options,
+.sff-contact-cards .card .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.sff-contact-cards .card .options a {
+    text-decoration: none;
+}
+
+.sff-contact-cards .card .options a p {
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-color-white);
+}
+
+.sff-contact-cards .card .text-area {
+    justify-content: start;
+    width: 100%;
+    gap: 2pc;
+}
+
+.sff-contact-cards .card .text-area p {
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.sff-contact-cards .card .text-area .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sff-contact-cards .card .text-area .social .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.sff-contact-cards .card .text-area .social .icon:hover {
+    transform: translateY(-5%);
+}
+
+.sff-contact-cards .card .text-area .social .icon svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sff-contact-cards .card .text-area .social .icon svg path {
+    fill: var(--card-1);
+}
+
+@media only screen and (max-width: 1100px) {
+    .sff-contact-cards {
+        justify-content: start;
+        overflow-x: auto;
+        padding-bottom: .5pc;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sff-contact-cards {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sff-contact-cards {
+        width: 100%;
+        padding: .5pc 1pc;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .sff-contact-cards .card {
+        width: 100%;
+    }
+
+    .sff-contact-cards .card:nth-child(2) .options a p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* --map */
+
+.sff-map {
+    position: relative;
+    width: 80%;
+    max-width: 1100px;
+    height: 400px;
+    border-radius: .5pc;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 0px #8d8d8d;
+    margin: 6pc auto;
+}
+
+.sff-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .sff-map  {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sff-map {
+        width: 100%;
+        padding: .5pc 1pc;
+    }
+}

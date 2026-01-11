@@ -1,0 +1,12 @@
+[
+    {
+        "country": "Türkiye",
+        "customers": "200",
+        "exhibitor": "50"
+    },
+    {
+        "country": "Spain",
+        "customers": "50",
+        "exhibitor": "5"
+    }
+]

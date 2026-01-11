@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+Sitemap: http://www.safirfuar.com/sitemap.xml

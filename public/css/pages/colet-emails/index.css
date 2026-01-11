@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sunuwar&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@font-face {
+    font-family: "arsenica";
+    src: url(/assets/fonts/arsenica.ttf);
+}
+
+body {
+    background-color: white;
+    background-image: url(/assets/img/collect-emails-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.auth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2pc;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-image: url(/assets/img/collect-emails-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .4s ease;
+}
+
+.auth.remove {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.auth .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+    width: max-content;
+    height: max-content;
+    padding: 2pc;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 1pc;
+}
+
+.auth .card input {
+    background-color: white;
+    outline: none;
+    border: 2px solid #dcdcdc;
+    padding: .7pc .5pc;
+    width: 250px;
+    border-radius: .2pc;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: .2s ease;
+}
+
+.auth .card input.err {
+    border-color: #ff8484;
+}
+
+.auth .card button {
+    border: none;
+    outline: none;
+    padding: .7pc .7pc;
+    background-color: #8486ff;
+    width: 250px;
+    border-radius: .2pc;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.auth .card button:hover {
+    background-color: #6b6ef7;
+}
+
+.auth .card button:active {
+    transition: .1s ease;
+    transform: scale(.99);
+}
+
+/* button loader */
+
+.button .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2pc;
+    aspect-ratio: 1;
+    display: grid;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease;
+}
+
+.button.load .loader {
+    opacity: 1;
+    visibility: visible;
+}
+
+.button.load {
+    background-color: black !important;
+}
+
+.button.load>* {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.button .loader:before,
+.button .loader:after {
+    content: "";
+    grid-area: 1/1;
+    margin: 0 0 15px 15px;
+    --c: #0000 calc(100%/3), white 0 calc(2*100%/3), #0000 0;
+    --c1: linear-gradient(90deg, var(--c));
+    --c2: linear-gradient(0deg, var(--c));
+    background: var(--c1), var(--c2), var(--c1), var(--c2);
+    background-size: 300% 4px, 4px 300%;
+    background-repeat: no-repeat;
+    animation: l12 1s infinite linear;
+}
+
+.button .loader:after {
+    margin: 15px 15px 0 0;
+    transform: scale(-1, -1);
+}
+
+@keyframes l12 {
+    0% {
+        background-position: 50% 0, 100% 100%, 0 100%, 0 0
+    }
+
+    25% {
+        background-position: 0 0, 100% 50%, 0 100%, 0 0
+    }
+
+    50% {
+        background-position: 0 0, 100% 0, 50% 100%, 0 0
+    }
+
+    75% {
+        background-position: 0 0, 100% 0, 100% 100%, 0 50%
+    }
+
+    75.01% {
+        background-position: 100% 0, 100% 0, 100% 100%, 0 50%
+    }
+
+    100% {
+        background-position: 50% 0, 100% 0, 100% 100%, 0 100%
+    }
+}
+
+#effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 80, 125, .11);
+    z-index: -1;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.main .stage {
+    position: relative;
+    width: 100%;
+    transition: 1s ease;
+}
+
+.main .input {
+    flex: 1;
+    transition: 1s ease;
+}
+
+.main .input .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2pc;
+    width: 800px;
+    height: 300px;
+    transition: 1s ease;
+}
+
+.main .input .content .title {
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.main .input .content .title h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "arsenica", sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+    user-select: none;
+    width: max-content;
+    transition: 1s ease;
+}
+
+.main .input .content .input-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1pc;
+    width: 100%;
+    height: 55px;
+    transition: 1s ease;
+}
+
+.main .input .content .input-area input {
+    flex: 1;
+    height: 100%;
+    border-radius: 2pc;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: .7px solid black;
+    padding: 0 1pc;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    transition: 1s ease;
+}
+
+.main .input .content .input-area input.err {
+    box-shadow: 0 0 5px #ff8484;
+    animation: err-effect .5s ease;
+}
+
+@keyframes err-effect {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(4px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.main .input .content .input-area .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 3/2;
+    height: 100%;
+    background-color: transparent;
+    border: .7px solid black;
+    border-radius: 2pc;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.main .input .content .input-area .button:hover {
+    background-color: black;
+}
+
+.main .input .content .input-area .button:active {
+    transition: .1s ease;
+    transform: scale(.97);
+}
+
+.main .input .content .input-area .button svg {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+.main .input .content .input-area .button svg circle {
+    stroke: black;
+    transition: .2s ease;
+}
+
+.main .input .content .input-area .button svg path {
+    fill: black;
+    transition: .2s ease;
+}
+
+.main .input .content .input-area .button:hover svg circle {
+    stroke: white;
+}
+
+.main .input .content .input-area .button:hover svg path {
+    fill: white;
+}
+
+.main .output {
+    flex: 0;
+    overflow: hidden;
+}
+
+.main.active .input .content {
+    left: 0;
+    transform: translate(0, -50%);
+    gap: 1pc;
+    padding-left: 2pc;
+    width: 600px;
+}
+
+.main.active .input .content .title h1 {
+    left: 0;
+    transform: translateX(0);
+    padding-left: 2pc;
+    font-size: 2.4rem;
+}
+
+.main.active .input .content .input-area {
+    height: 45px;
+}
+
+.main.active .output {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 1pc;
+    padding: 0 1pc;
+    padding-bottom: 1pc;
+    overflow-x: auto;
+}
+
+.main.active .output::-webkit-scrollbar {
+    height: .4pc;
+}
+
+.main.active .output::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.main.active .output .list {
+    display: flex;
+    flex-direction: column;
+    gap: .5pc;
+    width: 400px;
+    min-width: 400px;
+    height: 100%;
+    background-color: white;
+    border-radius: 1pc;
+    border: 1px solid #dcdcdc;
+    padding: .5pc 1pc;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    animation: loadList 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadList {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.main.active .output .list .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2pc;
+}
+
+.main.active .output .list .top .name p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+    color: #636363;
+}
+
+.main.active .output .list .top .pin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: .4pc;
+    border-radius: 50%;
+    transition: .2s ease;
+}
+
+.main.active .output .list .top .pin:hover {
+    background-color: #e7e7e7;
+}
+
+.main.active .output .list .top .pin.active {
+    background-color: black;
+}
+
+.main.active .output .list .top .pin.active svg {
+    fill: white;
+}
+
+.main.active .output .list .top .pin:active {
+    transition: .1s ease;
+    background-color: #dbdbdb;
+    transform: scale(.98);
+}
+
+.main.active .output .list .top .pin svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #636363;
+}
+
+.main.active .output .list .center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    align-content: start;
+    overflow-y: auto;
+    gap: .5pc;
+    width: 100%;
+    flex: 1;
+}
+
+.main.active .output .list .center::-webkit-scrollbar {
+    width: .3pc;
+}
+
+.main.active .output .list .center::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.main.active .output .list .center .data {
+    border: .7px solid black;
+    padding: .5pc 1pc;
+    border-radius: 2pc;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.main.active .output .list .center .data:hover {
+    transform: translateY(-5%);
+}
+
+.main.active .output .list .center .data:active {
+    transition: .1s ease;
+    transform: translateY(0%);
+}
+
+.main.active .output .list .center .data.sended {
+    background-color: black;
+}
+
+.main.active .output .list .center .data p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    color: black;
+}
+
+.main.active .output .list .center .data.sended p {
+    color: white;
+}
+
+.main.active .output .list .bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2pc;
+}
+
+.main.active .output .list .bottom .pages {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: .5pc;
+    height: 100%;
+    max-width: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.main.active .output .list .bottom .pages::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.main.active .output .list .bottom .pages .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: 100%;
+    border-radius: .5pc;
+    background-color: #f2f2f1;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.main.active .output .list .bottom .pages .page:hover {
+    background-color: #e2e2e2;
+}
+
+.main.active .output .list .bottom .pages .page:active {
+    transition: .1s ease;
+    transform: scale(.95);
+}
+
+.main.active .output .list .bottom .pages .page.active {
+    background-color: #ffebec;
+}
+
+.main.active .output .list .bottom .pages .page p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    user-select: none;
+}
+
+.main.active .output .list .bottom .buttons {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: .5pc;
+}
+
+.main.active .output .list .bottom .buttons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0 .7pc;
+    height: 100%;
+    border-radius: 1pc;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.main.active .output .list .bottom .buttons .mail {
+    padding: 0 1.4pc;
+}
+
+.main.active .output .list .bottom .buttons .trash {
+    padding: 0 1.2pc;
+}
+
+.main.active .output .list .bottom .buttons .button svg {
+    width: 1rem;
+    height: 1rem;
+    fill: white;
+}
+
+.main.active .output .list .bottom .buttons .trash svg {
+    width: .8rem;
+    height: .8rem;
+}
+
+.main.active .output .list .bottom .buttons .trash:hover {
+    background-color: #ff8484;
+}
+
+.main.active .output .list .bottom .buttons .button:hover {
+    transform: translateY(-5%);
+}
+
+.main.active .output .list .bottom .buttons .button:active {
+    transition: .1s ease;
+    transform: translateY(0%);
+}

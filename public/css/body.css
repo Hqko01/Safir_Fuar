@@ -1,0 +1,118 @@
+@import url('/css/root.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: .3pc;
+    height: .3pc;
+    background-color: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-black);
+}
+
+.img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: #bdbdbd;
+    filter: blur(20px);
+    animation: loadingIMG 2.7s ease infinite;
+}
+
+@keyframes loadingIMG {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+.img.loaded::after {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body.hidden {
+    overflow: hidden;
+    touch-action: none;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body.hidden {
+    overflow: hidden !important;
+}
+
+#load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: .4s ease;
+}
+
+#load.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 30px;
+    line-height: 1.2em;
+    height: 1.2em;
+    overflow: hidden;
+}
+
+.loader:before {
+    font-family: "Glacial", sans-serif;
+    content: "SAFİR FUAR \A⌰AFİR FUAR \A⌰⍜FİR FUAR \A⌰⍜⏃İR FUAR \A⌰⍜⏃⎅R FUAR \A⌰⍜⏃⎅⟟ FUAR \A⌰⍜⏃⎅⟟⋏UAR \A⌰⍜⏃⎅⟟⋏☌AR \A⌰⍜⏃⎅⟟⋏☌⟒R \A⌰⍜⏃⎅⟟⋏☌⟒⏁ \A⌰⍜⏃⎅⟟⋏☌⟒⏁";
+    white-space: pre;
+    display: inline-block;
+    font-weight: 100;
+    animation: l39 1s infinite steps(11) alternate;
+}
+
+@keyframes l39 {
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

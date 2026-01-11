@@ -1,0 +1,195 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    z-index: 10;
+}
+
+.header .header-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+}
+
+.header .header-content>div {
+    flex: 1;
+    height: 100%;
+}
+
+.header .header-content .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-content .logo img {
+    width: 90px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.header .header-content .nav {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-content .nav .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4pc;
+    padding: .4pc 2pc;
+    background-color: rgba(166, 168, 171, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2pc;
+}
+
+.header .header-content .nav .options .option {
+    padding: .2pc .6pc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .header-content .nav .options .option p {
+    font-size: .85rem;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.header .header-content .mobil-nav {
+    top: 0;
+    left: 100%;
+    transform: translateX(0);
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    height: 100svh;
+    transition: .4s ease;
+    background-color: black;
+    z-index: 500;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .header-content .mobil-nav.active {
+    transform: translateX(-100%);
+}
+
+.header .header-content .mobil-nav .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: max-content;
+    padding: 1pc;
+}
+
+.header .header-content .mobil-nav .icons>div {
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.header .header-content .mobil-nav .icons .open {
+    position: absolute;
+    left: -3pc;
+    transform: translateX(-100%);
+    transition: .2s ease;
+}
+
+.header .header-content .mobil-nav.active .icons .open {
+    transform: translateX(0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .header-content .mobil-nav .icons .open svg {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.header .header-content .mobil-nav .icons svg {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.header .header-content .mobil-nav .nav-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header .header-content .mobil-nav .nav-content .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.header .header-content .mobil-nav .nav-content .options .option {
+    padding: .2pc .6pc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .header-content .mobil-nav .nav-content .options .option p {
+    font-family: "Quicksand", sans-serif;
+    font-size: .85rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .header .header-content {
+        justify-content: space-between;
+    }
+
+    .header .header-content .nav {
+        display: none;
+    }
+
+    .header .header-content .logo {
+        max-width: max-content;
+        padding: 2pc;
+        padding-left: 3pc;
+    }
+
+    .header .header-content .mobil-nav {
+        position: fixed;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header .header-content .logo {
+        padding-left: 1pc;
+    }
+
+    .header .header-content .mobil-nav .icons .open {
+        left: -1pc;
+    }
+}
