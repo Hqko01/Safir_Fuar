@@ -32,7 +32,8 @@ const acceptedLanguages = [
 
 function connection(req, res, next) {
     const userLanguages = req.acceptsLanguages();
-    req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase()))).toLowerCase();
+    req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
+    console.log(req.session.language)
 
     next();
 }
