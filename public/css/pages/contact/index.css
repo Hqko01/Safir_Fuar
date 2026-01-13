@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 
 .sff-contact-slider .background {
@@ -385,7 +385,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(86, 126, 138, 0.36);
+    background-color: rgba(150, 150, 150, 0.36);
     backdrop-filter: brightness(90%);
     z-index: 1;
 }
@@ -545,34 +545,40 @@
     gap: 2pc;
     width: 80%;
     max-width: 1400px;
-    height: 250px;
+    height: max-content;
     margin: 6pc auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px #dadada;
+    border-radius: .5pc;
 }
 
 .sff-contact-cards .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     gap: 1pc;
     padding: 2pc;
-    aspect-ratio: 1.3 / 1;
-    border-radius: .5pc;
+    width: 100%;
+    height: 250px;
 }
 
-.sff-contact-cards .card:nth-child(1) {
-    background-color: var(--card-1);
-    color: var(--text-color-white);
+.sff-contact-cards .card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 50%;
+    background-color: #dedede;
+    border-radius: 2pc;
 }
 
-.sff-contact-cards .card:nth-child(2) {
-    background-color: var(--card-2);
-    color: var(--text-color-white);
-}
-
-.sff-contact-cards .card:nth-child(3) {
-    background-color: var(--card-3);
-    color: var(--text-color-black);
+.sff-contact-cards .card:nth-child(3):after {
+    content: '';
+    display: none;
 }
 
 .sff-contact-cards .card>.icon {
@@ -589,11 +595,7 @@
 }
 
 .sff-contact-cards .card .icon svg path {
-    fill: var(--card-3);
-}
-
-.sff-contact-cards .card:nth-child(3) .icon svg path {
-    fill: var(--card-1);
+    fill: var(--text-color-black);
 }
 
 .sff-contact-cards .card .options,
@@ -612,8 +614,8 @@
 .sff-contact-cards .card .options a p {
     font-family: "Montserrat", serif;
     font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--text-color-white);
+    font-weight: 500;
+    color: var(--text-color-black);
 }
 
 .sff-contact-cards .card .text-area {
@@ -624,10 +626,11 @@
 
 .sff-contact-cards .card .text-area p {
     font-family: "Quicksand", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.2rem;
     text-align: center;
     width: 100%;
+    color: var(--text-color-black);
 }
 
 .sff-contact-cards .card .text-area .social {
@@ -651,19 +654,38 @@
 }
 
 .sff-contact-cards .card .text-area .social .icon svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 
 .sff-contact-cards .card .text-area .social .icon svg path {
-    fill: var(--card-1);
+    fill: var(--text-color-black);
 }
 
 @media only screen and (max-width: 1100px) {
     .sff-contact-cards {
-        justify-content: start;
-        overflow-x: auto;
+        flex-direction: column;
         padding-bottom: .5pc;
+    }
+
+    .sff-contact-cards .card {
+        align-items: center;
+    }
+
+    .sff-contact-cards .card::after {
+        top: 100%;
+        left: 50%;
+        width: 50%;
+        height: 1px;
+    }
+
+    .sff-contact-cards .card>.icon {
+        justify-content: center;
+    }
+
+    .sff-contact-cards .card .text-area .social {
+        justify-content: center;
+        gap: 2pc;
     }
 }
 
@@ -710,7 +732,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .sff-map  {
+    .sff-map {
         width: 90%;
     }
 }

@@ -1,4 +1,4 @@
-const navigationOptions = document.querySelectorAll('[type="navigation"] .option')
+var navigationOptions = document.querySelectorAll('[type="navigation"] .option')
 
 navigationOptions.forEach(option => {
     option.addEventListener('click', () => {
@@ -41,19 +41,23 @@ navigationOptions.forEach(option => {
                         })
                     }
                 })
+
+                targetAreaStatu = true
             }
             else {
                 window.location = "/?" + route
             }
         }
+
+        navMenu("close")
     })
 })
 
 // Nav menu
-const navMenuDiv = document.querySelector('.head-menu .nav-menu')
-const navMenuIcon = document.querySelector('.head-menu .nav-menu .icon')
+var navMenuDiv = document.querySelector('.header .mobil-nav')
 
 function navMenu(statu) {
+    
     if (statu == "open") {
         navMenuDiv.classList.add('active')
     }
@@ -61,10 +65,6 @@ function navMenu(statu) {
         navMenuDiv.classList.remove('active')
     }
     else {
-        if (navMenuDiv.classList.contains('active')) {
-        }
-        else {
-        }
         navMenuDiv.classList.toggle('active')
     }
 }

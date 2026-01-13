@@ -58,7 +58,7 @@ function finishSection() {
     targetAreaStatu = true
     targetArea.classList.add('active')
     document.body.classList.remove('hidden')
-    aboutContents[aboutCounter].classList.remove('active')
+    aboutContents[aboutCounter]?.classList.remove('active')
 }
 
 window.addEventListener('wheel', (e) => {

@@ -1,8 +1,3 @@
-.head-menu {
-    display: none;
-    width: max-content !important;
-}
-
 .sffg-slider {
     position: relative;
     width: 100%;
@@ -877,7 +872,7 @@
     position: absolute;
     background-color: #301506;
     border: 2px solid #633300;
-    background-image: url('../../../../public/assets/img/cf.png');
+    background-image: url('/assets/img/cf.png');
     background-position: center;
     padding: 2pc 4pc;
     border-radius: 1pc;
