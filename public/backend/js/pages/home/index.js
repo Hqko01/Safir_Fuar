@@ -1,33 +1,7 @@
-/* function mapPath() {
-    const mapPaths = document.querySelectorAll('.stage-statistics .map svg path')
-    const countryInfo = document.querySelector('.country-info')
-
-    mapPaths.forEach(path => {
-        path.addEventListener('mouseover', () => {
-            countryInfo.style.opacity = "1";
-            countryInfo.style.visibility = "visible";
-            countryInfo.style.top = `${path.getBoundingClientRect().y}px`;
-            countryInfo.style.left = `${path.getBoundingClientRect().x}px`;
-            countryInfo.style.transform = `translateY(-${path.getBoundingClientRect().x / 30}px)`;
-
-            countryInfo.children[0].textContent = path.getAttribute('name')
-        })
-
-        path.addEventListener('mouseout', () => {
-            countryInfo.style.opacity = "0";
-            countryInfo.style.visibility = "hidden";
-        })
-    })
-
-    window.addEventListener('scroll', () => {
-        countryInfo.style = 0
-        countryInfo.style.visibility = "hidden";
-    })
-} mapPath() */
-
-/* window.addEventListener('load', () => {
+window.addEventListener('load', () => {
     if (window.location.href.includes('?')) {
-        var route = window.location.href.split('?')[1]
+        var route = window.location.search.split('=')[1]
+
         const routeLocs = document.querySelectorAll('[route-loc]')
         routeLocs.forEach(loc => {
             if (loc.getAttribute('route-loc') == route) {
@@ -38,34 +12,13 @@
             }
         })
     }
-}) */
-
-/* const ltInfoBars = document.querySelector('.sff-slider .content-area .page-router-area .lt-info-bar')
-var counter = 1
-function barActive() {
-    if (counter == ltInfoBars.childElementCount - 1) {
-        counter = 0;
-        ltInfoBars.children[ltInfoBars.childElementCount - 2].classList.remove('active');
-        ltInfoBars.children[counter].classList.add('active');
-        counter++;
-    }
-    else {
-        (counter != 0) ? ltInfoBars.children[counter - 1].classList.remove('active') : null;
-        ltInfoBars.children[counter].classList.add('active');
-        counter++;
-    }
-} */
-
-/* setInterval(() => {
-    barActive()
-}, 4000); */
-
+})
 
 const targetArea = document.querySelector('.about')
 const aboutContents = document.querySelectorAll('.about .content .card')
 
 let aboutCounter = -1
-let targetAreaStatu = true // FALSE FOR LIVE
+let targetAreaStatu = false // FALSE FOR LIVE
 let touchStartY = 0
 
 function activateSlide(direction) {

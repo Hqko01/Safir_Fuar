@@ -33,7 +33,6 @@ const acceptedLanguages = [
 function connection(req, res, next) {
     const userLanguages = req.acceptsLanguages();
     req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
-    console.log(req.session.language)
 
     next();
 }
@@ -404,35 +403,26 @@ function textToHtml(content) {
 }
 
 app.get('/', connection, (req, res) => {
-    res.redirect(`/${req.session.language}/home`)
+    res.render(`./pages/${req.session.language}/home/index`);
 })
 
-app.get('/:lang', connection, (req, res) => {
-    res.redirect(`/${req.session.language}/home`)
-})
+app.get('/pages/:page', connection, (req, res) => {
+    var page = req.params.page;
 
-app.get('/:lang/:page', connection, (req, res) => {
-    var { lang, page } = req.params;
-
-
-    if (fs.existsSync(`./views/pages/${lang}/${page}/index.ejs`)) {
-        res.render(`./pages/${lang}/${page}/index`);
+    if (fs.existsSync(`./views/pages/${req.session.language}/${page}/index.ejs`)) {
+        res.render(`./pages/${req.session.language}/${page}/index`);
     }
     else {
-        res.redirect(`/${lang}/404`)
+        res.redirect(`/`)
     }
 })
 
-app.get('/:lang/sitemap.xml', (req, res) => {
+app.get('/sitemap.xml', (req, res) => {
     fs.readFile(`./views/${req.session.lang}/sitemap.xml`, (err, data) => {
         if (err) throw err;
         res.send(data)
     })
 })
-
-/* user: "info@liriandev.com",
-pass: "yvsj afww cxps hspn" */
-
 
 app.listen(process.env.PORT || 5000, function () {
     console.log('http://localhost:5000')
