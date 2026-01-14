@@ -34,6 +34,9 @@ function connection(req, res, next) {
     const userLanguages = req.acceptsLanguages();
     req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
 
+    if(req.session.language == undefined) {
+        req.session.language = "tr";
+    }
     next();
 }
 
@@ -417,8 +420,8 @@ app.get('/pages/:page', connection, (req, res) => {
     }
 })
 
-app.get('/sitemap.xml', (req, res) => {
-    fs.readFile(`./views/${req.session.lang}/sitemap.xml`, (err, data) => {
+app.get('/sitemap.xml',connection, (req, res) => {
+    fs.readFile(`./views/${req.session.language}/sitemap.xml`, (err, data) => {
         if (err) throw err;
         res.send(data)
     })
