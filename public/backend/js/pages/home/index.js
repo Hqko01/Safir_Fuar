@@ -393,7 +393,7 @@ setInterval(getWork, 2000);
        7️⃣ ÜLKE SEÇME (MERKEZ + RENK)
     ======================= */
     function focusCountry(feature) {
-        var targetCountry = undefined
+        var targetCountry = countryStats.find(c => feature.properties.name == c.country)
 
         if(targetCountry == undefined) {
             targetCountry = countryStats.find(c => c.countryCode == "en")
