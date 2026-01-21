@@ -236,7 +236,7 @@ setInterval(getWork, 2000);
             }
         },
         {
-            country: "United States",
+            country: "United States America",
             country_lang: "Amerika Birleşik Devletleri",
             countryCode: "us",
             comment: "ABD’de katıldığımız fuarlarda markaların küresel ölçekte öne çıkmasını sağladık.",
