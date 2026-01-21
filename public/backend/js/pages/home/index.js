@@ -141,14 +141,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "Sweden",
-            country_lang: "Sverige",
+            country_lang: "İsveç",
             countryCode: "sv",
-            comment: "På mässor i Sverige hjälpte vi varumärken att möta rätt målgrupp på ett professionellt sätt.",
+            comment: "İsveç’te katıldığımız fuarlarda markaların profesyonel şekilde temsil edilmesini sağladık.",
             list: [
-                "10+ Mässdeltaganden",
-                "Internationella Varumärken",
-                "Monterdesign och Digital Presentation",
-                "Projekt i Stockholm"
+                "10+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Modern Stand Tasarımı",
+                "Stockholm projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-3.webp",
@@ -157,14 +157,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "Portugal",
-            country_lang: "Portugal",
+            country_lang: "Portekiz",
             countryCode: "pt",
-            comment: "Em feiras em Portugal, ajudámos marcas a conectar-se eficazmente com o público certo.",
+            comment: "Portekiz’de yer aldığımız fuarlarda markaların doğru ziyaretçilerle buluşmasına katkı sağladık.",
             list: [
-                "8+ Participações em Feiras",
-                "Marcas Internacionais",
-                "Design de Stands e Apresentação Digital",
-                "Projetos em Lisboa"
+                "8+ Fuar Katılımı",
+                "Uluslararası Katılımcılar",
+                "Marka Odaklı Standlar",
+                "Lizbon projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-4.webp",
@@ -173,14 +173,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "Netherlands",
-            country_lang: "Nederland",
+            country_lang: "Hollanda",
             countryCode: "nl",
-            comment: "Op beurzen in Nederland zorgden we ervoor dat merken duidelijk en effectief zichtbaar waren.",
+            comment: "Hollanda’daki fuarlarda markaların yenilikçi şekilde öne çıkmasını sağladık.",
             list: [
-                "12+ Beursdeelnames",
-                "Europees Gerichte Merken",
-                "Standontwerp en Digitale Presentatie",
-                "Projecten in Amsterdam"
+                "12+ Fuar Katılımı",
+                "Avrupa Merkezli Markalar",
+                "Stand ve Dijital Sunum",
+                "Amsterdam projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-5.webp",
@@ -189,14 +189,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "Italy",
-            country_lang: "Italia",
+            country_lang: "İtalya",
             countryCode: "it",
-            comment: "Nelle fiere in Italia abbiamo aiutato i brand a distinguersi davanti al pubblico giusto.",
+            comment: "İtalya’daki fuarlarda markaların hedef kitleleriyle güçlü bağlar kurmasına destek olduk.",
             list: [
-                "15+ Partecipazioni Fieristiche",
-                "Brand Nazionali e Internazionali",
-                "Progettazione Stand e Presentazione Digitale",
-                "Progetti a Milano"
+                "15+ Fuar Katılımı",
+                "Ulusal ve Uluslararası Markalar",
+                "Stand Tasarımı",
+                "Milano projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-6.webp",
@@ -205,14 +205,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "France",
-            country_lang: "France",
+            country_lang: "Fransa",
             countryCode: "fr",
-            comment: "Lors des salons en France, nous avons permis aux marques de toucher efficacement leur public cible.",
+            comment: "Fransa’daki fuarlarda markaların görünürlüğünü ve etkileşimini artırdık.",
             list: [
-                "14+ Participations à des Salons",
-                "Marques Internationales",
-                "Design de Stand et Présentation Digitale",
-                "Projets à Paris"
+                "14+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Profesyonel Stand Çözümleri",
+                "Paris projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-7.webp",
@@ -221,14 +221,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "Spain",
-            country_lang: "España",
+            country_lang: "İspanya",
             countryCode: "es",
-            comment: "En ferias en España ayudamos a las marcas a conectar con el público adecuado.",
+            comment: "İspanya’daki fuarlarda markaların doğru kitleyle buluşmasına katkı sağladık.",
             list: [
-                "11+ Participaciones en Ferias",
-                "Marcas Internacionales",
-                "Diseño de Stands y Presentación Digital",
-                "Proyectos en Barcelona"
+                "11+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Stand ve Sunum Tasarımı",
+                "Barselona projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-8.webp",
@@ -236,16 +236,15 @@ setInterval(getWork, 2000);
             }
         },
         {
-            country: "United States of America",
-            country_lang: "United States",
-            countryCode: "en",
-            flagCode: "us",
-            comment: "At trade shows in the United States, we helped brands connect effectively with the right audience.",
+            country: "United States",
+            country_lang: "Amerika Birleşik Devletleri",
+            countryCode: "us",
+            comment: "ABD’de katıldığımız fuarlarda markaların küresel ölçekte öne çıkmasını sağladık.",
             list: [
-                "20+ Trade Show Participations",
-                "International & US-Based Brands",
-                "Stand Design and Digital Presentation",
-                "Projects in New York and Las Vegas"
+                "20+ Fuar Katılımı",
+                "Küresel ve Yerel Markalar",
+                "Stand Tasarımı ve Dijital Sunum",
+                "New York, Las Vegas projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-9.webp",
@@ -254,14 +253,14 @@ setInterval(getWork, 2000);
         },
         {
             country: "Germany",
-            country_lang: "Deutschland",
+            country_lang: "Almanya",
             countryCode: "de",
-            comment: "Auf Messen in Deutschland haben wir Marken gezielt mit ihrer Zielgruppe zusammengebracht.",
+            comment: "Almanya’daki fuarlarda markaların hedef kitleleriyle etkili şekilde buluşmasını sağladık.",
             list: [
-                "20+ Messebeteiligungen",
-                "Internationale Marken",
-                "Standdesign und Digitale Präsentation",
-                "Projekte in Berlin"
+                "20+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Stand Tasarımı",
+                "Berlin projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-10.webp",
@@ -270,21 +269,22 @@ setInterval(getWork, 2000);
         },
         {
             country: "Saudi Arabia",
-            country_lang: "المملكة العربية السعودية",
+            country_lang: "Suudi Arabistan",
             countryCode: "ar",
-            comment: "في المعارض داخل السعودية ساعدنا العلامات التجارية على الوصول إلى الجمهور المناسب بفعالية.",
+            comment: "Suudi Arabistan’daki fuarlarda markaların doğru kitleye etkili şekilde ulaşmasını sağladık.",
             list: [
-                "10+ مشاركات في المعارض",
-                "علامات تجارية دولية",
-                "تصميم الأجنحة والعرض الرقمي",
-                "مشاريع في الرياض"
+                "10+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Stand ve Dijital Sunum",
+                "Riyad projeleri"
             ],
             sample: {
                 IMG: "/assets/img/projects/project-11.webp",
                 LOC: "Riyadh Expo"
             }
         }
-    ];
+    ]
+
 
     /* =======================
        2️⃣ BOYUT + PROJECTION
@@ -395,7 +395,7 @@ setInterval(getWork, 2000);
     function focusCountry(feature) {
         var targetCountry = countryStats.find(c => feature.properties.name == c.country)
 
-        if(targetCountry == undefined) {
+        if (targetCountry == undefined) {
             targetCountry = countryStats.find(c => c.countryCode == "en")
         }
 
