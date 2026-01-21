@@ -236,7 +236,7 @@ setInterval(getWork, 2000);
             }
         },
         {
-            country: "United States America",
+            country: "United States of America",
             country_lang: "Amerika Birleşik Devletleri",
             countryCode: "us",
             comment: "ABD’de katıldığımız fuarlarda markaların küresel ölçekte öne çıkmasını sağladık.",
@@ -394,7 +394,7 @@ setInterval(getWork, 2000);
     ======================= */
     function focusCountry(feature) {
         var targetCountry = countryStats.find(c => feature.properties.name == c.country)
-
+        console.log(feature.properties.name)
         if (targetCountry == undefined) {
             targetCountry = countryStats.find(c => c.countryCode == "en")
         }
