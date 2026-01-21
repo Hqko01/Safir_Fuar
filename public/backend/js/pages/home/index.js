@@ -135,7 +135,7 @@ setInterval(getWork, 2000);
                 "İstanbul, Ankara, Bursa projeleri"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-10.webp",
+                IMG: "/assets/img/projects/project-2.webp",
                 LOC: "Made Expo İstanbul"
             }
         },
@@ -151,7 +151,7 @@ setInterval(getWork, 2000);
                 "Projekt i Stockholm"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-11.webp",
+                IMG: "/assets/img/projects/project-3.webp",
                 LOC: "Stockholm Expo"
             }
         },
@@ -167,7 +167,7 @@ setInterval(getWork, 2000);
                 "Projetos em Lisboa"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-12.webp",
+                IMG: "/assets/img/projects/project-4.webp",
                 LOC: "Lisbon Expo"
             }
         },
@@ -183,7 +183,7 @@ setInterval(getWork, 2000);
                 "Projecten in Amsterdam"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-13.webp",
+                IMG: "/assets/img/projects/project-5.webp",
                 LOC: "Amsterdam RAI"
             }
         },
@@ -199,7 +199,7 @@ setInterval(getWork, 2000);
                 "Progetti a Milano"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-14.webp",
+                IMG: "/assets/img/projects/project-6.webp",
                 LOC: "Fiera Milano"
             }
         },
@@ -215,7 +215,7 @@ setInterval(getWork, 2000);
                 "Projets à Paris"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-15.webp",
+                IMG: "/assets/img/projects/project-7.webp",
                 LOC: "Paris Expo"
             }
         },
@@ -231,7 +231,7 @@ setInterval(getWork, 2000);
                 "Proyectos en Barcelona"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-16.webp",
+                IMG: "/assets/img/projects/project-8.webp",
                 LOC: "Fira Barcelona"
             }
         },
@@ -248,7 +248,7 @@ setInterval(getWork, 2000);
                 "Projects in New York and Las Vegas"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-17.webp",
+                IMG: "/assets/img/projects/project-9.webp",
                 LOC: "Las Vegas Expo"
             }
         },
@@ -264,7 +264,7 @@ setInterval(getWork, 2000);
                 "Projekte in Berlin"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-18.webp",
+                IMG: "/assets/img/projects/project-10.webp",
                 LOC: "Berlin Expo"
             }
         },
@@ -280,7 +280,7 @@ setInterval(getWork, 2000);
                 "مشاريع في الرياض"
             ],
             sample: {
-                IMG: "/assets/img/projects/project-19.webp",
+                IMG: "/assets/img/projects/project-11.webp",
                 LOC: "Riyadh Expo"
             }
         }
