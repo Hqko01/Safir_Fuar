@@ -132,14 +132,10 @@
                         </div>
                         <div class="text">
                             <div class="title">
-                                <p>Lorem, ipsum.</p>
+                                <p>Markanızı sahada güçlü şekilde temsil ederiz.</p>
                             </div>
                             <div class="cnt">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolorum debitis in
-                                    sapiente
-                                    rem ducimus ut. Exercitationem possimus deleniti corrupti harum, ratione ipsa
-                                    molestiae
-                                    eos.</p>
+                                <p>Safir Fuar, markalar için özel tasarlanmış fuar standları üreten, bu süreci tasarımdan kuruluma kadar uçtan uca yöneten bir firmadır. Fuar standlarının yanı sıra showroom, restoran ve özel ticari alan projelerinde de anahtar teslim çözümler sunar.</p>
                             </div>
                         </div>
                     </div>
@@ -152,14 +148,10 @@
                         </div>
                         <div class="text">
                             <div class="title">
-                                <p>Lorem, ipsum.</p>
+                                <p>Süreci sizin yerinize biz yönetiriz.</p>
                             </div>
                             <div class="cnt">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolorum debitis in
-                                    sapiente
-                                    rem ducimus ut. Exercitationem possimus deleniti corrupti harum, ratione ipsa
-                                    molestiae
-                                    eos.</p>
+                                <p>İhtiyacınızı dinler, bütçenize ve markanıza uygun tasarımı hazırlarız. Üretim, sevkiyat ve kurulum dahil olmak üzere tüm süreci tek elden yönetiriz. Siz sadece işinize odaklanırsınız, standınız zamanında ve eksiksiz şekilde hazır olur.</p>
                             </div>
                         </div>
                     </div>
@@ -172,14 +164,10 @@
                         </div>
                         <div class="text">
                             <div class="title">
-                                <p>Lorem, ipsum.</p>
+                                <p>Tecrübe, kalite ve zamanında teslim.</p>
                             </div>
                             <div class="cnt">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolorum debitis in
-                                    sapiente
-                                    rem ducimus ut. Exercitationem possimus deleniti corrupti harum, ratione ipsa
-                                    molestiae
-                                    eos.</p>
+                                <p>10 yılı aşkın süredir fuar ve stand sektöründe faaliyet gösteriyoruz. Her projede malzeme kalitesine, işçiliğe ve detaylara aynı özeni gösteriyoruz. İster küçük ölçekli bir stand, ister büyük bir fuar alanı olsun; kalite bizim için standarttır.</p>
                             </div>
                         </div>
                     </div>
@@ -192,14 +180,10 @@
                         </div>
                         <div class="text">
                             <div class="title">
-                                <p>Lorem, ipsum.</p>
+                                <p>Türkiye’de güçlü, uluslararası alanda deneyimli.</p>
                             </div>
                             <div class="cnt">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolorum debitis in
-                                    sapiente
-                                    rem ducimus ut. Exercitationem possimus deleniti corrupti harum, ratione ipsa
-                                    molestiae
-                                    eos.</p>
+                                <p>Türkiye başta olmak üzere Almanya, Hollanda, Fransa, İspanya ve Orta Doğu’da birçok projeye imza attık. Özellikle Almanya’da aktif olarak fuar standları üretiyor ve kurulumlarını gerçekleştiriyoruz. Uluslararası standartlara uygun üretim ve zamanında teslim anlayışımızla, markanızı her yerde güvenle temsil ederiz.</p>
                             </div>
                         </div>
                     </div>
@@ -702,240 +686,6 @@
             </div>
         </div>
         <%- include('../../../inc/footer') %>
-            <script>
-                const worksArrayTR = ["fuar", "otel", "restoran", "showroom", "mağaza"]
-                const worksOutput = document.getElementById('works-output');
-                let workCounter = 1;
-
-                function getWork() {
-                    worksOutput.style.color = 'transparent';
-                    setTimeout(() => {
-                        worksOutput.textContent = worksArrayTR[workCounter]
-
-                        setTimeout(() => {
-                            worksOutput.style.color = 'black';
-                        }, 200)
-                    }, 200)
-
-                    if (worksArrayTR.length - 1 == workCounter) {
-                        workCounter = 0;
-                    }
-                    else {
-                        workCounter += 1;
-                    }
-                }
-
-                setInterval(getWork, 2000);
-
-
-                (async function () {
-
-                    /* =======================
-                       1️⃣ VERİ (SENİN JSON)
-                    ======================= */
-                    const countryStats = [
-                        { country: "Turkey", countryCode: "tr", comment: "Lorem ipsum dolor, sit amet consectetur adipisicing.", list: ["50+ Çalışan", "25+ Fuar", "İtanbul, Ankara, Bursa"], sample: { IMG: "/assets/img/projects/project-10.webp", LOC: "Made Expo" } },
-                        { country: "Spain", countryCode: "es", comment: "Lorem ipsum dolor, sit amet consectetur adipisicing.", list: ["50+ Çalışan", "25+ Fuar", "İtanbul, Ankara, Bursa"], sample: { IMG: "/assets/img/projects/project-10.webp", LOC: "Made Expo" } },
-                        { country: "Germany", countryCode: "de", comment: "Lorem ipsum dolor, sit amet consectetur adipisicing.", list: ["50+ Çalışan", "25+ Fuar", "İtanbul, Ankara, Bursa"], sample: { IMG: "/assets/img/projects/project-10.webp", LOC: "Made Expo" } },
-                        { country: "Albania", countryCode: "al", comment: "Lorem ipsum dolor, sit amet consectetur adipisicing.", list: ["50+ Çalışan", "25+ Fuar", "İtanbul, Ankara, Bursa"], sample: { IMG: "/assets/img/projects/project-10.webp", LOC: "Made Expo" } },
-                    ];
-
-                    /* =======================
-                       2️⃣ BOYUT + PROJECTION
-                    ======================= */
-                    const width = 900;
-                    const height = 800;
-
-                    const projection = d3.geoOrthographic()
-                        .scale(400)
-                        .translate([width / 2, height / 2])
-                        .rotate([0, -20]);
-
-                    const path = d3.geoPath(projection);
-
-                    const svg = d3.select('#map')
-                        .append('svg')
-                        .attr('viewBox', `0 0 ${width} ${height}`);
-
-                    /* =======================
-                       3️⃣ KÜRE GÖLGESİ
-                    ======================= */
-                    const defs = svg.append('defs');
-
-                    const gradient = defs.append('radialGradient')
-                        .attr('id', 'globeGradient');
-
-                    gradient.append('stop')
-                        .attr('offset', '0%')
-                        .attr('stop-color', '#ffffff')
-                        .attr('stop-opacity', 0.0);
-
-                    gradient.append('stop')
-                        .attr('offset', '70%')
-                        .attr('stop-color', '#ffffff')
-                        .attr('stop-opacity', 0.2);
-
-                    gradient.append('stop')
-                        .attr('offset', '100%')
-                        .attr('stop-color', '#000000')
-                        .attr('stop-opacity', 0.05);
-
-                    svg.append('circle')
-                        .attr('cx', width / 2)
-                        .attr('cy', height / 2)
-                        .attr('r', projection.scale())
-                        .attr('fill', 'url(#globeGradient)');
-
-                    /* =======================
-                       4️⃣ DÜNYA VERİSİ
-                    ======================= */
-                    const world = await fetch(
-                        'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
-                    ).then(res => res.json());
-
-                    const countries = topojson.feature(
-                        world,
-                        world.objects.countries
-                    ).features;
-
-                    const g = svg.append('g');
-
-                    g.selectAll('path')
-                        .data(countries)
-                        .enter()
-                        .append('path')
-                        .attr('class', d => {
-                            const hasData = countryStats.some(
-                                c => c.country === d.properties.name
-                            );
-                            return hasData ? 'country data' : 'country';
-                        })
-                        .attr('d', path)
-                        .on('click', (e, d) => selectCountry(d.properties.name));
-
-                    /* =======================
-                       5️⃣ DRAG → DÖNDÜR
-                    ======================= */
-                    svg.call(
-                        d3.drag().on('drag', (event) => {
-                            const r = projection.rotate();
-                            projection.rotate([
-                                r[0] + event.dx * 0.25,
-                                r[1] - event.dy * 0.25
-                            ]);
-                            g.selectAll('path').attr('d', path);
-                        })
-                    );
-
-                    /* =======================
-                       6️⃣ KULLANICI ÜLKESİ
-                    ======================= */
-                    function detectUserCountry() {
-                        const lang = navigator.language || '';
-                        const map = {
-                            tr: 'Turkey',
-                            es: 'Spain',
-                            de: 'Germany',
-                            fr: 'France',
-                            it: 'Italy',
-                            en: 'United States'
-                        };
-                        return map[lang.split('-')[0]] || null;
-                    }
-
-                    /* =======================
-                       7️⃣ ÜLKE SEÇME (MERKEZ + RENK)
-                    ======================= */
-                    function focusCountry(feature) {
-                        let targetCountry = countryStats.find(c => feature.properties.name == c.country)
-                        if (targetCountry) {
-
-                            const [lng, lat] = d3.geoCentroid(feature);
-                            const rSlope = (window.innerWidth < 700) ? 1 : 2;
-
-                            d3.transition()
-                                .duration(900)
-                                .tween('rotate', () => {
-                                    const r = d3.interpolate(
-                                        projection.rotate(),
-                                        [-lng, -lat / rSlope]
-                                    );
-                                    return t => {
-                                        projection.rotate(r(t));
-                                        g.selectAll('path').attr('d', path);
-                                    };
-                                });
-
-                            // Country info outputs
-
-                            const countryName = document.querySelector('.world-by-us .info-card .country-info .country .name p')
-                            const countryFlag = document.querySelector('.world-by-us .info-card .country-info .country .flag img')
-                            const comment = document.querySelector('.world-by-us .info-card .country-info .comment p')
-                            const list = document.querySelector('.world-by-us .info-card .country-info .list')
-                            const sampleIMG = document.querySelector('.world-by-us .info-card .country-info .sample-img img')
-                            const sampleLOC = document.querySelector('.world-by-us .info-card .country-info .sample-img .sample-info p')
-                            list.innerHTML = "";
-
-                            countryName.textContent = targetCountry.country;
-                            countryFlag.src = `https://countryflagsapi.netlify.app/flag/${targetCountry.countryCode}.svg`;
-                            comment.textContent = targetCountry.comment;
-
-                            targetCountry.list.forEach(l => {
-                                var el = document.createElement('div');
-                                el.classList.add('el');
-
-                                el.innerHTML = `<p>${l}</p>`;
-
-                                list.appendChild(el);
-                            });
-
-                            sampleIMG.src = targetCountry.sample.IMG;
-                            sampleLOC.textContent = targetCountry.sample.LOC;
-                        }
-                    }
-
-                    function selectCountry(countryName) {
-                        const feature = countries.find(
-                            f => f.properties.name === countryName
-                        );
-                        if (!feature) return;
-
-                        focusCountry(feature);
-                        if (countryStats.find(c => feature.properties.name == c.country)) {
-
-                            d3.selectAll('.country')
-                                .classed('active', d => d?.properties.name === countryName);
-
-                            currentCountry = countryName;
-                        }
-                    }
-
-                    /* =======================
-                       9️⃣ AKIŞ: İLK + 20sn
-                    ======================= */
-                    let currentCountry = null;
-
-                    const userCountry = detectUserCountry();
-                    if (userCountry) {
-                        selectCountry(userCountry);
-                    }
-
-                    function getRandomCountry(exclude) {
-                        const list = countryStats
-                            .map(c => c.country)
-                            .filter(c => c !== exclude);
-
-                        if (!list.length) return null;
-                        return list[Math.floor(Math.random() * list.length)];
-                    }
-
-                    setInterval(() => {
-                        const next = getRandomCountry(currentCountry);
-                        if (next) selectCountry(next);
-                    }, 4000);
-
-                })();
-            </script>
 </body>
 
 <script src="/backend/js/inc/body.js"></script>
