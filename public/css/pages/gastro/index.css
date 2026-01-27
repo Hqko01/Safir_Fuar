@@ -217,7 +217,7 @@
         align-items: center;
     }
 
-    .sffg-slider .content .text-area .text .header h1 {
+    .sffg-slider .content .text-area .text h1 {
         font-size: 3.3rem;
         line-height: 4.5pc;
         text-align: center;
@@ -230,9 +230,9 @@
         max-height: none;
     }
 
-    .sffg-slider .content .text-area .text .header h1 {
+    .sffg-slider .content .text-area .text h1 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .sffg-slider .content .text-area .text p {
@@ -254,7 +254,7 @@
 
 
 @media only screen and (max-width: 450px) {
-    .sffg-slider .content .text-area .text .header h1 {
+    .sffg-slider .content .text-area .text h1 {
         font-size: 3rem;
     }
 
@@ -264,7 +264,7 @@
 }
 
 @media only screen and (max-width: 360px) {
-    .sffg-slider .content .text-area .text .header h1 {
+    .sffg-slider .content .text-area .text h1 {
         font-size: 2.8rem;
         line-height: 4pc;
     }
