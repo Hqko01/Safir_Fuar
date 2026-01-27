@@ -27,3 +27,14 @@ window.addEventListener('load', () => {
 
     if (window.location.href.includes("mail.safirfuar.com")) { window.location = "mailto:info@safirfuar.com" }
 })
+
+const wp_icon = document.querySelector('.wp-icon')
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 0) {
+        wp_icon.classList.add('active')
+    }
+    else {
+        wp_icon.classList.remove('active')
+    }
+})

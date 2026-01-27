@@ -116,3 +116,33 @@ body.hidden {
     }
 }
 
+.wp-icon {
+    position: fixed;
+    left: 2pc;
+    bottom: 2pc;
+    width: max-content;
+    aspect-ratio: 1/1;
+    background-color: rgb(0, 201, 54);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding: .7pc;
+    border-radius: 50%;
+    z-index: 20;
+    box-shadow: 0 0 7px rgb(0, 201, 54);
+    cursor: pointer;
+    user-select: none;
+    transition: .4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wp-icon.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wp-icon svg {
+    width: 2rem;
+    height: 2rem;
+}
