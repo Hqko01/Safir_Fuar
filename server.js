@@ -23,6 +23,10 @@ app.use(session({
 }));
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.send('Server is running ');
+});
+
 app.get('/memories/:id', (req, res) => {
     const id = req.params.id;
     const filePath = `./public/assets/memories/${id}.json`;
