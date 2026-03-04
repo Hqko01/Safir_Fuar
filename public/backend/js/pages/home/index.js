@@ -122,6 +122,9 @@ setInterval(getWork, 2000);
     const response = await fetch('https://api.safirfuar.com/memories/work-list', (err, res) => {
         if (err) {
             console.log(err);
+
+            const worldDiv = document.querySelector('.world-by-us');
+            worldDiv.style.display = "none";
         }
     });
 
@@ -130,11 +133,6 @@ setInterval(getWork, 2000);
             data.data.forEach(work => {
                 countryStats.push(work);
             });
-        }
-        else {
-            const worldDiv = document.querySelector('.world-by-us');
-
-            worldDiv.style.display = "none";
         }
     });
 
