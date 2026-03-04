@@ -222,7 +222,7 @@
 }
 
 .sff-post-mail .post .policy .text info::before {
-    content: "Girilen bilgiler Liriandev aracılığı ile Safir Fuar'a E-mail gönderilecektir. Herhangi bir kayıt olmayacaktır.";
+    content: "Information entered will be sent to Safir Fuar via Liriandev as an e-mail. No data will be recorded.";
     position: absolute;
     top: 0;
     left: 50%;
