@@ -409,6 +409,10 @@ app.get('/', connection, (req, res) => {
     res.render(`./pages/${req.session.language}/home/index`, { "language": req.session.language });
 })
 
+app.get('/host', (req, res) => {
+    res.send(req.headers.host.split(".safirfuar.com")[0]);
+})
+
 app.get('/pages/:page', connection, (req, res) => {
     var page = req.params.page;
 
