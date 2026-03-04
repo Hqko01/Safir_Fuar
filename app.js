@@ -31,11 +31,16 @@ const acceptedLanguages = [
 ];
 
 function connection(req, res, next) {
-    const userLanguages = req.acceptsLanguages();
-    req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
+    if (req.headers.host.split(".safirfuar.com")[0] == "www") {
+        const userLanguages = req.acceptsLanguages();
+        req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
 
-    if (req.session.language == undefined) {
-        req.session.language = "tr";
+        if (req.session.language == undefined) {
+            req.session.language = "tr";
+        }
+    }
+    else {
+        req.session.language = req.headers.host.split(".safirfuar.com")[0];
     }
     next();
 }
@@ -407,10 +412,6 @@ function textToHtml(content) {
 
 app.get('/', connection, (req, res) => {
     res.render(`./pages/${req.session.language}/home/index`, { "language": req.session.language });
-})
-
-app.get('/host', (req, res) => {
-    res.send(req.headers.host.split(".safirfuar.com")[0]);
 })
 
 app.get('/pages/:page', connection, (req, res) => {
