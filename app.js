@@ -31,17 +31,28 @@ const acceptedLanguages = [
 ];
 
 function connection(req, res, next) {
-    if (req.headers.host.split(".safirfuar.com")[0] == "www") {
-        const userLanguages = req.acceptsLanguages();
+    const userLanguages = req.acceptsLanguages();
+    
+    if (req.headers.host.includes(".safirfuar.com")) {
+        if (req.headers.host.split(".safirfuar.com")[0] == "www") {
+            req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
+
+            if (req.session.language == undefined) {
+                req.session.language = "tr";
+            }
+        }
+        else {
+            req.session.language = req.headers.host.split(".safirfuar.com")[0];
+        }
+    }
+    else {
         req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
 
         if (req.session.language == undefined) {
             req.session.language = "tr";
         }
     }
-    else {
-        req.session.language = req.headers.host.split(".safirfuar.com")[0];
-    }
+
     next();
 }
 
