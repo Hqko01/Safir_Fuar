@@ -829,7 +829,7 @@
 }
 
 .world-by-us .global-info-mobil {
-    display: none;
+    display: none !important;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -967,9 +967,9 @@
         display: none;
     }
 
-    .world-by-us .global-info-mobil {
+    /* .world-by-us .global-info-mobil {
         display: block;
-    }
+    } */
 }
 
 @media only screen and (max-width: 600px) {
