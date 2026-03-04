@@ -1,162 +1,1622 @@
-[
-    {
-        "country": "Turkey",
-        "country_lang": "Türkiye",
-        "countryCode": "tr",
-        "comment": "Türkiye’de katıldığımız fuarlarda markaların doğru kitleyle etkili şekilde buluşmasını sağladık.",
-        "list": [
-            "25+ Fuar Katılımı",
-            "50+ Marka ile İş Birliği",
-            "Stand Tasarımı ve Dijital Sunum",
-            "İstanbul, Ankara, Bursa projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-2.webp",
-            "LOC": "Made Expo İstanbul"
+{
+    "tr": [
+        {
+            "country": "Turkey",
+            "country_lang": "Türkiye",
+            "countryCode": "tr",
+            "comment": "Türkiye’de katıldığımız fuarlarda markaların doğru kitleyle etkili şekilde buluşmasını sağladık.",
+            "list": [
+                "25+ Fuar Katılımı",
+                "50+ Marka ile İş Birliği",
+                "Stand Tasarımı ve Dijital Sunum",
+                "İstanbul, Ankara, Bursa projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo İstanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "İsveç",
+            "countryCode": "sv",
+            "comment": "İsveç’te katıldığımız fuarlarda markaların profesyonel şekilde temsil edilmesini sağladık.",
+            "list": [
+                "10+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Modern Stand Tasarımı",
+                "Stockholm projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portekiz",
+            "countryCode": "pt",
+            "comment": "Portekiz’de yer aldığımız fuarlarda markaların doğru ziyaretçilerle buluşmasına katkı sağladık.",
+            "list": [
+                "8+ Fuar Katılımı",
+                "Uluslararası Katılımcılar",
+                "Marka Odaklı Standlar",
+                "Lizbon projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Hollanda",
+            "countryCode": "nl",
+            "comment": "Hollanda’daki fuarlarda markaların yenilikçi şekilde öne çıkmasını sağladık.",
+            "list": [
+                "12+ Fuar Katılımı",
+                "Avrupa Merkezli Markalar",
+                "Stand ve Dijital Sunum",
+                "Amsterdam projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "İtalya",
+            "countryCode": "it",
+            "comment": "İtalya’daki fuarlarda markaların hedef kitleleriyle güçlü bağlar kurmasına destek olduk.",
+            "list": [
+                "15+ Fuar Katılımı",
+                "Ulusal ve Uluslararası Markalar",
+                "Stand Tasarımı",
+                "Milano projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "Fransa",
+            "countryCode": "fr",
+            "comment": "Fransa’daki fuarlarda markaların görünürlüğünü ve etkileşimini artırdık.",
+            "list": [
+                "14+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Profesyonel Stand Çözümleri",
+                "Paris projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "İspanya",
+            "countryCode": "es",
+            "comment": "İspanya’daki fuarlarda markaların doğru kitleyle buluşmasına katkı sağladık.",
+            "list": [
+                "11+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Stand ve Sunum Tasarımı",
+                "Barselona projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "Amerika Birleşik Devletleri",
+            "countryCode": "us",
+            "comment": "ABD’de katıldığımız fuarlarda markaların küresel ölçekte öne çıkmasını sağladık.",
+            "list": [
+                "20+ Fuar Katılımı",
+                "Küresel ve Yerel Markalar",
+                "Stand Tasarımı ve Dijital Sunum",
+                "New York, Las Vegas projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Almanya",
+            "countryCode": "de",
+            "comment": "Almanya’daki fuarlarda markaların hedef kitleleriyle etkili şekilde buluşmasını sağladık.",
+            "list": [
+                "20+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Stand Tasarımı",
+                "Berlin projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Berlin Expo"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Suudi Arabistan",
+            "countryCode": "ar",
+            "comment": "Suudi Arabistan’daki fuarlarda markaların doğru kitleye etkili şekilde ulaşmasını sağladık.",
+            "list": [
+                "10+ Fuar Katılımı",
+                "Uluslararası Markalar",
+                "Stand ve Dijital Sunum",
+                "Riyad projeleri"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "Sweden",
-        "country_lang": "İsveç",
-        "countryCode": "sv",
-        "comment": "İsveç’te katıldığımız fuarlarda markaların profesyonel şekilde temsil edilmesini sağladık.",
-        "list": [
-            "10+ Fuar Katılımı",
-            "Uluslararası Markalar",
-            "Modern Stand Tasarımı",
-            "Stockholm projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-3.webp",
-            "LOC": "Stockholm Expo"
+    ],
+    "en": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turkey",
+            "countryCode": "tr",
+            "comment": "We ensured brands met their target audience effectively at exhibitions we attended in Turkey.",
+            "list": [
+                "25+ Exhibition Participations",
+                "50+ Brand Partnerships",
+                "Stand Design and Digital Presentation",
+                "Istanbul, Ankara, Bursa projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Sweden",
+            "countryCode": "sv",
+            "comment": "We provided professional representation for brands at major exhibitions across Sweden.",
+            "list": [
+                "10+ Exhibition Participations",
+                "International Brands",
+                "Modern Stand Design",
+                "Stockholm projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "We contributed to brands meeting the right visitors at exhibitions we held in Portugal.",
+            "list": [
+                "8+ Exhibition Participations",
+                "International Participants",
+                "Brand-Oriented Stands",
+                "Lisbon projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Netherlands",
+            "countryCode": "nl",
+            "comment": "We enabled brands to stand out innovatively at trade fairs in the Netherlands.",
+            "list": [
+                "12+ Exhibition Participations",
+                "Europe-Based Brands",
+                "Stand and Digital Presentation",
+                "Amsterdam projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italy",
+            "countryCode": "it",
+            "comment": "We supported brands in building strong connections with their target audiences at Italian exhibitions.",
+            "list": [
+                "15+ Exhibition Participations",
+                "National and International Brands",
+                "Stand Design Solutions",
+                "Milan projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "France",
+            "countryCode": "fr",
+            "comment": "We increased brand visibility and interaction at exhibitions in France.",
+            "list": [
+                "14+ Exhibition Participations",
+                "International Brands",
+                "Professional Stand Solutions",
+                "Paris projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Spain",
+            "countryCode": "es",
+            "comment": "We helped brands meet the right audience at exhibitions throughout Spain.",
+            "list": [
+                "11+ Exhibition Participations",
+                "International Brands",
+                "Stand and Presentation Design",
+                "Barcelona projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "United States",
+            "countryCode": "us",
+            "comment": "We enabled brands to stand out on a global scale at exhibitions we attended in the USA.",
+            "list": [
+                "20+ Exhibition Participations",
+                "Global and Local Brands",
+                "Stand Design and Digital Presentation",
+                "New York, Las Vegas projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Germany",
+            "countryCode": "de",
+            "comment": "We ensured brands met their target audience effectively at trade fairs in Germany.",
+            "list": [
+                "20+ Exhibition Participations",
+                "International Brands",
+                "Premium Stand Design",
+                "Berlin projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Berlin Expo"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Saudi Arabia",
+            "countryCode": "ar",
+            "comment": "We enabled brands to reach their target audience effectively at exhibitions in Saudi Arabia.",
+            "list": [
+                "10+ Exhibition Participations",
+                "International Brands",
+                "Stand and Digital Presentation",
+                "Riyadh projects"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "Portugal",
-        "country_lang": "Portekiz",
-        "countryCode": "pt",
-        "comment": "Portekiz’de yer aldığımız fuarlarda markaların doğru ziyaretçilerle buluşmasına katkı sağladık.",
-        "list": [
-            "8+ Fuar Katılımı",
-            "Uluslararası Katılımcılar",
-            "Marka Odaklı Standlar",
-            "Lizbon projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-4.webp",
-            "LOC": "Lisbon Expo"
+    ],
+    "ar": [
+        {
+            "country": "Turkey",
+            "country_lang": "تركيا",
+            "countryCode": "tr",
+            "comment": "لقد ضمنّا وصول العلامات التجارية إلى الجمهور المستهدف بفعالية في المعارض التي شاركنا فيها في تركيا.",
+            "list": [
+                "أكثر من 25 مشاركة في المعارض",
+                "شراكة مع أكثر من 50 علامة تجارية",
+                "تصميم المنصات والعروض الرقمية",
+                "مشاريع في إسطنبول، أنقرة، وبورصة"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "معرض ميد إكسبو إسطنبول"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "السويد",
+            "countryCode": "sv",
+            "comment": "قدمنا تمثيلاً احترافياً للعلامات التجارية في المعارض الكبرى في السويد.",
+            "list": [
+                "أكثر من 10 مشاركات في المعارض",
+                "علامات تجارية دولية",
+                "تصميم منصات عصري",
+                "مشاريع ستوكهولم"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "ستوكهولم إكسبو"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "البرتغال",
+            "countryCode": "pt",
+            "comment": "ساهمنا في ربط العلامات التجارية بالزوار المناسبين في المعارض التي أقيمت في البرتغال.",
+            "list": [
+                "أكثر من 8 مشاركات في المعارض",
+                "مشاركون دوليون",
+                "منصات تركز على هوية العلامة",
+                "مشاريع لشبونة"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "لشبونة إكسبو"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "هولندا",
+            "countryCode": "nl",
+            "comment": "مكّنا العلامات التجارية من البروز بشكل مبتكر في المعارض التجارية في هولندا.",
+            "list": [
+                "أكثر من 12 مشاركة في المعارض",
+                "علامات تجارية مقرها أوروبا",
+                "منصات وعروض رقمية",
+                "مشاريع أمستردام"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "أمستردام راي"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "إيطاليا",
+            "countryCode": "it",
+            "comment": "دعمنا العلامات التجارية في بناء علاقات قوية مع جمهورها المستهدف في المعارض الإيطالية.",
+            "list": [
+                "أكثر من 15 مشاركة في المعارض",
+                "علامات تجارية وطنية ودولية",
+                "حلول تصميم المنصات",
+                "مشاريع ميلانو"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "فييرا ميلانو"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "فرنسا",
+            "countryCode": "fr",
+            "comment": "عززنا ظهور العلامات التجارية وتفاعلها في المعارض في فرنسا.",
+            "list": [
+                "أكثر من 14 مشاركة في المعارض",
+                "علامات تجارية دولية",
+                "حلول منصات احترافية",
+                "مشاريع باريس"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "باريس إكسبو"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "إسبانيا",
+            "countryCode": "es",
+            "comment": "ساعدنا العلامات التجارية في الوصول إلى الجمهور المناسب في المعارض في جميع أنحاء إسبانيا.",
+            "list": [
+                "أكثر من 11 مشاركة في المعارض",
+                "علامات تجارية دولية",
+                "تصميم المنصات والعروض",
+                "مشاريع برشلونة"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "فيرا برشلونة"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "الولايات المتحدة الأمريكية",
+            "countryCode": "us",
+            "comment": "مكّنا العلامات التجارية من البروز على نطاق عالمي في المعارض التي شاركنا فيها في أمريكا.",
+            "list": [
+                "أكثر من 20 مشاركة في المعارض",
+                "علامات تجارية عالمية ومحلية",
+                "تصميم المنصات والعروض الرقمية",
+                "مشاريع نيويورك ولاس فيغاس"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "لاس فيغاس إكسبو"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "ألمانيا",
+            "countryCode": "de",
+            "comment": "ضمنّا وصول العلامات التجارية إلى جمهورها المستهدف بفعالية في المعارض التجارية في ألمانيا.",
+            "list": [
+                "أكثر من 20 مشاركة في المعارض",
+                "علامات تجارية دولية",
+                "تصميم منصات متميز",
+                "مشاريع برلين"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "معرض برلين"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "المملكة العربية السعودية",
+            "countryCode": "ar",
+            "comment": "مكّنا العلامات التجارية من الوصول إلى جمهورها المستهدف بفعالية في معارض المملكة العربية السعودية.",
+            "list": [
+                "أكثر من 10 مشاركات في المعارض",
+                "علامات تجارية دولية",
+                "تصميم المنصات والعروض الرقمية",
+                "مشاريع الرياض"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "معرض الرياض"
+            }
         }
-    },
-    {
-        "country": "Netherlands",
-        "country_lang": "Hollanda",
-        "countryCode": "nl",
-        "comment": "Hollanda’daki fuarlarda markaların yenilikçi şekilde öne çıkmasını sağladık.",
-        "list": [
-            "12+ Fuar Katılımı",
-            "Avrupa Merkezli Markalar",
-            "Stand ve Dijital Sunum",
-            "Amsterdam projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-5.webp",
-            "LOC": "Amsterdam RAI"
+    ],
+    "de": [
+        {
+            "country": "Turkey",
+            "country_lang": "Türkei",
+            "countryCode": "tr",
+            "comment": "Wir haben dafür gesorgt, dass Marken auf Messen in der Türkei ihre Zielgruppe effektiv erreichen.",
+            "list": [
+                "25+ Messebeteiligungen",
+                "Zusammenarbeit mit 50+ Marken",
+                "Standdesign und digitale Präsentation",
+                "Projekte in Istanbul, Ankara, Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Schweden",
+            "countryCode": "sv",
+            "comment": "Wir haben für eine professionelle Repräsentation von Marken auf den wichtigsten Messen in Schweden gesorgt.",
+            "list": [
+                "10+ Messebeteiligungen",
+                "Internationale Marken",
+                "Modernes Standdesign",
+                "Stockholm Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "Wir haben dazu beigetragen, dass Marken auf Messen in Portugal mit den richtigen Besuchern zusammenkommen.",
+            "list": [
+                "8+ Messebeteiligungen",
+                "Internationale Teilnehmer",
+                "Markenorientierte Messestände",
+                "Lissabon Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Niederlande",
+            "countryCode": "nl",
+            "comment": "Wir haben es Marken ermöglicht, auf Fachmessen in den Niederlanden durch Innovation hervorzustechen.",
+            "list": [
+                "12+ Messebeteiligungen",
+                "Europäische Marken",
+                "Standbau und digitale Präsentation",
+                "Amsterdam Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italien",
+            "countryCode": "it",
+            "comment": "Wir haben Marken dabei unterstützt, auf italienischen Messen starke Verbindungen zu ihren Zielgruppen aufzubauen.",
+            "list": [
+                "15+ Messebeteiligungen",
+                "Nationale und internationale Marken",
+                "Lösungen für Standdesign",
+                "Mailand Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "Frankreich",
+            "countryCode": "fr",
+            "comment": "Wir haben die Sichtbarkeit und Interaktion von Marken auf Messen in Frankreich erhöht.",
+            "list": [
+                "14+ Messebeteiligungen",
+                "Internationale Marken",
+                "Professionelle Standlösungen",
+                "Paris Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Spanien",
+            "countryCode": "es",
+            "comment": "Wir haben Marken geholfen, auf Messen in ganz Spanien das richtige Publikum zu erreichen.",
+            "list": [
+                "11+ Messebeteiligungen",
+                "Internationale Marken",
+                "Stand- und Präsentationsdesign",
+                "Barcelona Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "USA",
+            "countryCode": "us",
+            "comment": "Wir haben es Marken ermöglicht, auf Messen in den USA auf globaler Ebene hervorzustechen.",
+            "list": [
+                "20+ Messebeteiligungen",
+                "Globale und lokale Marken",
+                "Standdesign und digitale Präsentation",
+                "New York, Las Vegas Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Deutschland",
+            "countryCode": "de",
+            "comment": "Wir haben dafür gesorgt, dass Marken auf Fachmessen in Deutschland ihre Zielgruppe effektiv erreichen.",
+            "list": [
+                "20+ Messebeteiligungen",
+                "Internationale Marken",
+                "Premium Standdesign",
+                "Berlin Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Messe Berlin"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Saudi-Arabien",
+            "countryCode": "ar",
+            "comment": "Wir haben es Marken ermöglicht, ihre Zielgruppe auf Messen in Saudi-Arabien effektiv zu erreichen.",
+            "list": [
+                "10+ Messebeteiligungen",
+                "Internationale Marken",
+                "Standdesign und digitale Präsentation",
+                "Riad Projekte"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riad Expo"
+            }
         }
-    },
-    {
-        "country": "Italy",
-        "country_lang": "İtalya",
-        "countryCode": "it",
-        "comment": "İtalya’daki fuarlarda markaların hedef kitleleriyle güçlü bağlar kurmasına destek olduk.",
-        "list": [
-            "15+ Fuar Katılımı",
-            "Ulusal ve Uluslararası Markalar",
-            "Stand Tasarımı",
-            "Milano projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-6.webp",
-            "LOC": "Fiera Milano"
+    ],
+    "es": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turquía",
+            "countryCode": "tr",
+            "comment": "Aseguramos que las marcas conectaran eficazmente con su público objetivo en las ferias de Turquía.",
+            "list": [
+                "Más de 25 participaciones en ferias",
+                "Colaboración con más de 50 marcas",
+                "Diseño de stands y presentación digital",
+                "Proyectos en Estambul, Ankara y Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Estambul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Suecia",
+            "countryCode": "sv",
+            "comment": "Proporcionamos una representación profesional para las marcas en las principales ferias de Suecia.",
+            "list": [
+                "Más de 10 participaciones en ferias",
+                "Marcas internacionales",
+                "Diseño de stands modernos",
+                "Proyectos en Estocolmo"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "Contribuimos a que las marcas se encontraran con los visitantes adecuados en las ferias de Portugal.",
+            "list": [
+                "Más de 8 participaciones en ferias",
+                "Participantes internacionales",
+                "Stands orientados a la marca",
+                "Proyectos en Lisboa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Países Bajos",
+            "countryCode": "nl",
+            "comment": "Permitimos que las marcas destacaran de manera innovadora en las ferias de los Países Bajos.",
+            "list": [
+                "Más de 12 participaciones en ferias",
+                "Marcas con sede en Europa",
+                "Stand y presentación digital",
+                "Proyectos en Ámsterdam"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italia",
+            "countryCode": "it",
+            "comment": "Apoyamos a las marcas en la creación de vínculos sólidos con sus audiencias en las ferias italianas.",
+            "list": [
+                "Más de 15 participaciones en ferias",
+                "Marcas nacionales e internacionales",
+                "Soluciones de diseño de stands",
+                "Proyectos en Milán"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "Francia",
+            "countryCode": "fr",
+            "comment": "Aumentamos la visibilidad y la interacción de las marcas en las ferias de Francia.",
+            "list": [
+                "Más de 14 participaciones en ferias",
+                "Marcas internacionales",
+                "Soluciones profesionales de stands",
+                "Proyectos en París"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "España",
+            "countryCode": "es",
+            "comment": "Ayudamos a las marcas a llegar al público adecuado en ferias por toda España.",
+            "list": [
+                "Más de 11 participaciones en ferias",
+                "Marcas internacionales",
+                "Diseño de stands y presentaciones",
+                "Proyectos en Barcelona"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "Estados Unidos",
+            "countryCode": "us",
+            "comment": "Permitimos que las marcas destacaran a escala global en las ferias de EE. UU.",
+            "list": [
+                "Más de 20 participaciones en ferias",
+                "Marcas globales y locales",
+                "Diseño de stands y presentaciones digitales",
+                "Proyectos en Nueva York y Las Vegas"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Alemania",
+            "countryCode": "de",
+            "comment": "Aseguramos que las marcas conectaran eficazmente con su público en las ferias de Alemania.",
+            "list": [
+                "Más de 20 participaciones en ferias",
+                "Marcas internacionales",
+                "Diseño de stands premium",
+                "Proyectos en Berlín"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Berlin Expo"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Arabia Saudita",
+            "countryCode": "ar",
+            "comment": "Permitimos que las marcas llegaran a su público objetivo eficazmente en las ferias de Arabia Saudita.",
+            "list": [
+                "Más de 10 participaciones en ferias",
+                "Marcas internacionales",
+                "Diseño de stands y presentaciones digitales",
+                "Proyectos en Riad"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "France",
-        "country_lang": "Fransa",
-        "countryCode": "fr",
-        "comment": "Fransa’daki fuarlarda markaların görünürlüğünü ve etkileşimini artırdık.",
-        "list": [
-            "14+ Fuar Katılımı",
-            "Uluslararası Markalar",
-            "Profesyonel Stand Çözümleri",
-            "Paris projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-7.webp",
-            "LOC": "Paris Expo"
+    ],
+    "fr": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turquie",
+            "countryCode": "tr",
+            "comment": "Nous avons permis aux marques de rencontrer efficacement leur public cible lors des salons en Turquie.",
+            "list": [
+                "Plus de 25 participations aux salons",
+                "Collaboration avec plus de 50 marques",
+                "Design de stands et présentation numérique",
+                "Projets à Istanbul, Ankara et Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Suède",
+            "countryCode": "sv",
+            "comment": "Nous avons assuré une représentation professionnelle des marques lors des grands salons en Suède.",
+            "list": [
+                "Plus de 10 participations aux salons",
+                "Marques internationales",
+                "Design de stands modernes",
+                "Projets à Stockholm"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "Nous avons aidé les marques à rencontrer les bons visiteurs lors des salons organisés au Portugal.",
+            "list": [
+                "Plus de 8 participations aux salons",
+                "Participants internationaux",
+                "Stands axés sur l'identité de marque",
+                "Projets à Lisbonne"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Pays-Bas",
+            "countryCode": "nl",
+            "comment": "Nous avons permis aux marques de se démarquer de manière innovante lors des foires aux Pays-Bas.",
+            "list": [
+                "Plus de 12 participations aux salons",
+                "Marques basées en Europe",
+                "Stand et présentation numérique",
+                "Projets à Amsterdam"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italie",
+            "countryCode": "it",
+            "comment": "Nous avons soutenu les marques dans la création de liens forts avec leurs publics lors des salons italiens.",
+            "list": [
+                "Plus de 15 participations aux salons",
+                "Marques nationales et internationales",
+                "Solutions de design de stands",
+                "Projets à Milan"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "France",
+            "countryCode": "fr",
+            "comment": "Nous avons augmenté la visibilité et l'interaction des marques lors des salons en France.",
+            "list": [
+                "Plus de 14 participations aux salons",
+                "Marques internationales",
+                "Solutions de stands professionnels",
+                "Projets à Paris"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Espagne",
+            "countryCode": "es",
+            "comment": "Nous avons aidé les marques à atteindre le bon public lors des salons dans toute l'Espagne.",
+            "list": [
+                "Plus de 11 participations aux salons",
+                "Marques internationales",
+                "Design de stands et de présentations",
+                "Projets à Barcelone"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "États-Unis",
+            "countryCode": "us",
+            "comment": "Nous avons permis aux marques de se démarquer à l'échelle mondiale lors des salons aux États-Unis.",
+            "list": [
+                "Plus de 20 participations aux salons",
+                "Marques mondiales et locales",
+                "Design de stands et présentations numériques",
+                "Projets à New York et Las Vegas"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Allemagne",
+            "countryCode": "de",
+            "comment": "Nous avons veillé à ce que les marques rencontrent efficacement leur public lors des foires en Allemagne.",
+            "list": [
+                "Plus de 20 participations aux salons",
+                "Marques internationales",
+                "Design de stands premium",
+                "Projets à Berlin"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Berlin Expo"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Arabie Saoudite",
+            "countryCode": "ar",
+            "comment": "Nous avons permis aux marques d'atteindre efficacement leur public cible lors des salons en Arabie Saoudite.",
+            "list": [
+                "Plus de 10 participations aux salons",
+                "Marques internationales",
+                "Design de stands et présentations numériques",
+                "Projets à Riyad"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "Spain",
-        "country_lang": "İspanya",
-        "countryCode": "es",
-        "comment": "İspanya’daki fuarlarda markaların doğru kitleyle buluşmasına katkı sağladık.",
-        "list": [
-            "11+ Fuar Katılımı",
-            "Uluslararası Markalar",
-            "Stand ve Sunum Tasarımı",
-            "Barselona projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-8.webp",
-            "LOC": "Fira Barcelona"
+    ],
+    "it": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turchia",
+            "countryCode": "tr",
+            "comment": "Abbiamo garantito che i marchi incontrassero efficacemente il loro pubblico di riferimento nelle fiere in Turchia.",
+            "list": [
+                "Oltre 25 partecipazioni fieristiche",
+                "Collaborazione con più di 50 marchi",
+                "Design dello stand e presentazione digitale",
+                "Progetti a Istanbul, Ankara e Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Svezia",
+            "countryCode": "sv",
+            "comment": "Abbiamo fornito una rappresentanza professionale per i marchi nelle principali fiere in Svezia.",
+            "list": [
+                "Oltre 10 partecipazioni fieristiche",
+                "Marchi internazionali",
+                "Design moderno dello stand",
+                "Progetti a Stoccolma"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portogallo",
+            "countryCode": "pt",
+            "comment": "Abbiamo contribuito a far incontrare i marchi con i visitatori giusti nelle fiere organizzate in Portogallo.",
+            "list": [
+                "Oltre 8 partecipazioni fieristiche",
+                "Partecipanti internazionali",
+                "Stand orientati al marchio",
+                "Progetti a Lisbona"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Paesi Bassi",
+            "countryCode": "nl",
+            "comment": "Abbiamo permesso ai marchi di distinguersi in modo innovativo nelle fiere dei Paesi Bassi.",
+            "list": [
+                "Oltre 12 partecipazioni fieristiche",
+                "Marchi con sede in Europa",
+                "Stand e presentazione digitale",
+                "Progetti ad Amsterdam"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italia",
+            "countryCode": "it",
+            "comment": "Abbiamo supportato i marchi nella creazione di forti legami con il loro pubblico nelle fiere italiane.",
+            "list": [
+                "Oltre 15 partecipazioni fieristiche",
+                "Marchi nazionali e internazionali",
+                "Soluzioni di design per stand",
+                "Progetti a Milano"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "Francia",
+            "countryCode": "fr",
+            "comment": "Abbiamo aumentato la visibilità e l'interazione dei marchi nelle fiere in Francia.",
+            "list": [
+                "Oltre 14 partecipazioni fieristiche",
+                "Marchi internazionali",
+                "Soluzioni professionali per stand",
+                "Progetti a Parigi"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Spagna",
+            "countryCode": "es",
+            "comment": "Abbiamo aiutato i marchi a raggiungere il pubblico giusto nelle fiere in tutta la Spagna.",
+            "list": [
+                "Oltre 11 partecipazioni fieristiche",
+                "Marchi internazionali",
+                "Design dello stand e della presentazione",
+                "Progetti a Barcellona"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "Stati Uniti",
+            "countryCode": "us",
+            "comment": "Abbiamo permesso ai marchi di distinguersi su scala globale nelle fiere a cui abbiamo partecipato negli USA.",
+            "list": [
+                "Oltre 20 partecipazioni fieristiche",
+                "Marchi globali e locali",
+                "Design dello stand e presentazione digitale",
+                "Progetti a New York e Las Vegas"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Germania",
+            "countryCode": "de",
+            "comment": "Abbiamo garantito che i marchi incontrassero efficacemente il loro pubblico nelle fiere in Germania.",
+            "list": [
+                "Oltre 20 partecipazioni fieristiche",
+                "Marchi internazionali",
+                "Design di stand premium",
+                "Progetti a Berlino"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Berlin Expo"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Arabia Saudita",
+            "countryCode": "ar",
+            "comment": "Abbiamo permesso ai marchi di raggiungere efficacemente il loro pubblico nelle fiere in Arabia Saudita.",
+            "list": [
+                "Oltre 10 partecipazioni fieristiche",
+                "Marchi internazionali",
+                "Design dello stand e presentazione digitale",
+                "Progetti a Riad"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "United States of America",
-        "country_lang": "Amerika Birleşik Devletleri",
-        "countryCode": "us",
-        "comment": "ABD’de katıldığımız fuarlarda markaların küresel ölçekte öne çıkmasını sağladık.",
-        "list": [
-            "20+ Fuar Katılımı",
-            "Küresel ve Yerel Markalar",
-            "Stand Tasarımı ve Dijital Sunum",
-            "New York, Las Vegas projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-9.webp",
-            "LOC": "Las Vegas Expo"
+    ],
+    "nl": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turkije",
+            "countryCode": "tr",
+            "comment": "Wij hebben ervoor gezorgd dat merken hun doelgroep effectief ontmoetten op beurzen in Turkije.",
+            "list": [
+                "25+ beursdeelnames",
+                "Samenwerking met 50+ merken",
+                "Standontwerp en digitale presentatie",
+                "Projecten in Istanbul, Ankara en Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Zweden",
+            "countryCode": "sv",
+            "comment": "Wij boden professionele vertegenwoordiging voor merken op grote beurzen in Zweden.",
+            "list": [
+                "10+ beursdeelnames",
+                "Internationale merken",
+                "Modern standontwerp",
+                "Stockholm-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "Wij hebben bijgedragen aan het verbinden van merken met de juiste bezoekers op beurzen in Portugal.",
+            "list": [
+                "8+ beursdeelnames",
+                "Internationale deelnemers",
+                "Merkgerichte stands",
+                "Lissabon-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Nederland",
+            "countryCode": "nl",
+            "comment": "Wij stelden merken in staat om op innovatieve wijze op te vallen op vakbeurzen in Nederland.",
+            "list": [
+                "12+ beursdeelnames",
+                "In Europa gevestigde merken",
+                "Standbouw en digitale presentatie",
+                "Amsterdam-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italië",
+            "countryCode": "it",
+            "comment": "Wij ondersteunden merken bij het opbouwen van sterke banden met hun doelgroepen op Italiaanse beurzen.",
+            "list": [
+                "15+ beursdeelnames",
+                "Nationale en internationale merken",
+                "Standontwerp-oplossingen",
+                "Milaan-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "Frankrijk",
+            "countryCode": "fr",
+            "comment": "Wij hebben de zichtbaarheid en interactie van merken op beurzen in Frankrijk vergroot.",
+            "list": [
+                "14+ beursdeelnames",
+                "Internationale merken",
+                "Professionele standbouw-oplossingen",
+                "Parijs-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Spanje",
+            "countryCode": "es",
+            "comment": "Wij hebben merken geholpen het juiste publiek te bereiken op beurzen in heel Spanje.",
+            "list": [
+                "11+ beursdeelnames",
+                "Internationale merken",
+                "Standontwerp en presentaties",
+                "Barcelona-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "Verenigde Staten",
+            "countryCode": "us",
+            "comment": "Wij stelden merken in staat om op wereldwijde schaal op te vallen op beurzen in de VS.",
+            "list": [
+                "20+ beursdeelnames",
+                "Wereldwijde en lokale merken",
+                "Standontwerp en digitale presentatie",
+                "Projecten in New York en Las Vegas"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Duitsland",
+            "countryCode": "de",
+            "comment": "Wij hebben ervoor gezorgd dat merken hun doelgroep effectief ontmoetten op beurzen in Duitsland.",
+            "list": [
+                "20+ beursdeelnames",
+                "Internationale merken",
+                "Premium standbouw",
+                "Berlijn-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Messe Berlin"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Saoedi-Arabië",
+            "countryCode": "ar",
+            "comment": "Wij stelden merken in staat om hun doelgroep effectief te bereiken op beurzen in Saoedi-Arabië.",
+            "list": [
+                "10+ beursdeelnames",
+                "Internationale merken",
+                "Standontwerp en digitale presentatie",
+                "Riyad-projecten"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "Germany",
-        "country_lang": "Almanya",
-        "countryCode": "de",
-        "comment": "Almanya’daki fuarlarda markaların hedef kitleleriyle etkili şekilde buluşmasını sağladık.",
-        "list": [
-            "20+ Fuar Katılımı",
-            "Uluslararası Markalar",
-            "Stand Tasarımı",
-            "Berlin projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-10.webp",
-            "LOC": "Berlin Expo"
+    ],
+    "pt": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turquia",
+            "countryCode": "tr",
+            "comment": "Garantimos que as marcas encontrassem o seu público-alvo de forma eficaz em feiras na Turquia.",
+            "list": [
+                "Mais de 25 participações em feiras",
+                "Colaboração com mais de 50 marcas",
+                "Design de stands e apresentação digital",
+                "Projetos em Istambul, Ancara e Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istambul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Suécia",
+            "countryCode": "sv",
+            "comment": "Oferecemos representação profissional para marcas em grandes feiras na Suécia.",
+            "list": [
+                "Mais de 10 participações em feiras",
+                "Marcas internacionais",
+                "Design de stands modernos",
+                "Projetos em Estocolmo"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholm Expo"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "Contribuímos para que as marcas se encontrassem com os visitantes certos em feiras em Portugal.",
+            "list": [
+                "Mais de 8 participações em feiras",
+                "Participantes internacionais",
+                "Stands focados na marca",
+                "Projetos em Lisboa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Países Baixos",
+            "countryCode": "nl",
+            "comment": "Permitimos que as marcas se destacassem de forma inovadora em feiras comerciais nos Países Baixos.",
+            "list": [
+                "Mais de 12 participações em feiras",
+                "Marcas sediadas na Europa",
+                "Stand e apresentação digital",
+                "Projetos em Amesterdão"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Itália",
+            "countryCode": "it",
+            "comment": "Apoiamos as marcas na criação de laços fortes com os seus públicos-alvo em feiras italianas.",
+            "list": [
+                "Mais de 15 participações em feiras",
+                "Marcas nacionais e internacionais",
+                "Soluções de design de stands",
+                "Projetos em Milão"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "França",
+            "countryCode": "fr",
+            "comment": "Aumentámos a visibilidade e a interação das marcas em feiras na França.",
+            "list": [
+                "Mais de 14 participações em feiras",
+                "Marcas internacionais",
+                "Soluções profissionais de stands",
+                "Projetos em Paris"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Espanha",
+            "countryCode": "es",
+            "comment": "Ajudámos as marcas a alcançar o público certo em feiras por toda a Espanha.",
+            "list": [
+                "Mais de 11 participações em feiras",
+                "Marcas internacionais",
+                "Design de stands e apresentações",
+                "Projetos em Barcelona"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "Estados Unidos",
+            "countryCode": "us",
+            "comment": "Permitimos que as marcas se destacassem à escala global em feiras nos EUA.",
+            "list": [
+                "Mais de 20 participações em feiras",
+                "Marcas globais e locais",
+                "Design de stands e apresentação digital",
+                "Projetos em Nova Iorque e Las Vegas"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Alemanha",
+            "countryCode": "de",
+            "comment": "Garantimos que as marcas encontrassem o seu público-alvo de forma eficaz em feiras na Alemanha.",
+            "list": [
+                "Mais de 20 participações em feiras",
+                "Marcas internacionais",
+                "Design de stands premium",
+                "Projetos em Berlim"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Berlin Expo"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Arábia Saudita",
+            "countryCode": "ar",
+            "comment": "Permitimos que as marcas alcançassem o seu público-alvo eficazmente em feiras na Arábia Saudita.",
+            "list": [
+                "Mais de 10 participações em feiras",
+                "Marcas internacionais",
+                "Design de stands e apresentação digital",
+                "Projetos em Riade"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    },
-    {
-        "country": "Saudi Arabia",
-        "country_lang": "Suudi Arabistan",
-        "countryCode": "ar",
-        "comment": "Suudi Arabistan’daki fuarlarda markaların doğru kitleye etkili şekilde ulaşmasını sağladık.",
-        "list": [
-            "10+ Fuar Katılımı",
-            "Uluslararası Markalar",
-            "Stand ve Dijital Sunum",
-            "Riyad projeleri"
-        ],
-        "sample": {
-            "IMG": "/assets/img/projects/project-11.webp",
-            "LOC": "Riyadh Expo"
+    ],
+    "sv": [
+        {
+            "country": "Turkey",
+            "country_lang": "Turkiet",
+            "countryCode": "tr",
+            "comment": "Vi såg till att varumärken nådde sin målgrupp effektivt på mässor i Turkiet.",
+            "list": [
+                "25+ mässdeltaganden",
+                "Samarbete med 50+ varumärken",
+                "Monterdesign och digital presentation",
+                "Projekt i Istanbul, Ankara och Bursa"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-2.webp",
+                "LOC": "Made Expo Istanbul"
+            }
+        },
+        {
+            "country": "Sweden",
+            "country_lang": "Sverige",
+            "countryCode": "sv",
+            "comment": "Vi erbjöd professionell representation för varumärken på stora mässor i Sverige.",
+            "list": [
+                "10+ mässdeltaganden",
+                "Internationella varumärken",
+                "Modern monterdesign",
+                "Stockholm-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-3.webp",
+                "LOC": "Stockholmsmässan"
+            }
+        },
+        {
+            "country": "Portugal",
+            "country_lang": "Portugal",
+            "countryCode": "pt",
+            "comment": "Vi bidrog till att varumärken mötte rätt besökare på mässor i Portugal.",
+            "list": [
+                "8+ mässdeltaganden",
+                "Internationella deltagare",
+                "Varumärkesfokuserade montrar",
+                "Lissabon-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-4.webp",
+                "LOC": "Lisbon Expo"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "country_lang": "Nederländerna",
+            "countryCode": "nl",
+            "comment": "Vi gjorde det möjligt för varumärken att sticka ut innovativt på fackmässor i Nederländerna.",
+            "list": [
+                "12+ mässdeltaganden",
+                "Europabaserade varumärken",
+                "Monterbygge och digital presentation",
+                "Amsterdam-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-5.webp",
+                "LOC": "Amsterdam RAI"
+            }
+        },
+        {
+            "country": "Italy",
+            "country_lang": "Italien",
+            "countryCode": "it",
+            "comment": "Vi stödde varumärken i att skapa starka band med sina målgrupper på italienska mässor.",
+            "list": [
+                "15+ mässdeltaganden",
+                "Nationella och internationella varumärken",
+                "Lösningar för monterdesign",
+                "Milano-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-6.webp",
+                "LOC": "Fiera Milano"
+            }
+        },
+        {
+            "country": "France",
+            "country_lang": "Frankrike",
+            "countryCode": "fr",
+            "comment": "Vi ökade varumärkens synlighet och interaktion på mässor i Frankrike.",
+            "list": [
+                "14+ mässdeltaganden",
+                "Internationella varumärken",
+                "Professionella monterlösningar",
+                "Paris-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-7.webp",
+                "LOC": "Paris Expo"
+            }
+        },
+        {
+            "country": "Spain",
+            "country_lang": "Spanien",
+            "countryCode": "es",
+            "comment": "Vi hjälpte varumärken att nå rätt publik på mässor över hela Spanien.",
+            "list": [
+                "11+ mässdeltaganden",
+                "Internationella varumärken",
+                "Monter- och presentationsdesign",
+                "Barcelona-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-8.webp",
+                "LOC": "Fira Barcelona"
+            }
+        },
+        {
+            "country": "United States of America",
+            "country_lang": "USA",
+            "countryCode": "us",
+            "comment": "Vi gjorde det möjligt för varumärken att sticka ut på en global nivå på mässor i USA.",
+            "list": [
+                "20+ mässdeltaganden",
+                "Globala och lokala varumärken",
+                "Monterdesign och digital presentation",
+                "New York, Las Vegas-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-9.webp",
+                "LOC": "Las Vegas Expo"
+            }
+        },
+        {
+            "country": "Germany",
+            "country_lang": "Tyskland",
+            "countryCode": "de",
+            "comment": "Vi såg till att varumärken nådde sin målgrupp effektivt på fackmässor i Tyskland.",
+            "list": [
+                "20+ mässdeltaganden",
+                "Internationella varumärken",
+                "Premium monterdesign",
+                "Berlin-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-10.webp",
+                "LOC": "Messe Berlin"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "country_lang": "Saudiarabien",
+            "countryCode": "ar",
+            "comment": "Vi gjorde det möjligt för varumärken att nå sin målgrupp effektivt på mässor i Saudiarabien.",
+            "list": [
+                "10+ mässdeltaganden",
+                "Internationella varumärken",
+                "Monterdesign och digital presentation",
+                "Riyadh-projekt"
+            ],
+            "sample": {
+                "IMG": "/assets/img/projects/project-11.webp",
+                "LOC": "Riyadh Expo"
+            }
         }
-    }
-]
+    ]
+}

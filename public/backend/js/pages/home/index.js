@@ -92,21 +92,33 @@ function infoCard() {
 
 /* MAP */
 
-const worksArrayTR = ["fuar", "otel", "restoran", "showroom", "mağaza"]
+const worksArray = {
+    "tr": ["fuar", "otel", "restoran", "showroom", "mağaza"],
+    "en": ["exhibition", "hotel", "restaurant", "showroom", "store"],
+    "de": ["messe", "hotel", "restaurant", "showroom", "ladenbau"],
+    "ar": ["معرض", "فندق", "مطعم", "صالة عرض", "متجر"],
+    "es": ["feria", "hotel", "restaurante", "showroom", "tienda"],
+    "fr": ["exposition", "hôtel", "restaurant", "showroom", "boutique"],
+    "it": ["fiera", "hotel", "ristorante", "showroom", "negozio"],
+    "nl": ["beurs", "hotel", "restaurant", "showroom", "winkel"],
+    "pt": ["feira", "hotel", "restaurante", "showroom", "loja"],
+    "sv": ["mässa", "hotell", "restaurang", "showroom", "butik"]
+}
+
 const worksOutput = document.getElementById('works-output');
 let workCounter = 1;
 
 function getWork() {
     worksOutput.style.color = 'transparent';
     setTimeout(() => {
-        worksOutput.textContent = worksArrayTR[workCounter]
+        worksOutput.textContent = worksArray[navigator.language.split('-')[0].toLowerCase()][workCounter];
 
         setTimeout(() => {
             worksOutput.style.color = 'black';
         }, 200)
     }, 200)
 
-    if (worksArrayTR.length - 1 == workCounter) {
+    if (worksArray[navigator.language.split('-')[0].toLowerCase()].length - 1 == workCounter) {
         workCounter = 0;
     }
     else {
@@ -119,24 +131,27 @@ setInterval(getWork, 2000);
 
 (async function () {
     const worldDiv = document.querySelector('.world-by-us');
+    var countryStats = []; // Diziyi en üstte tanımlıyoruz
 
-    const response = await fetch('https://api.safirfuar.com/memories/work-list', (err, res) => {
-        if (err) {
-            console.log(err);
-        }
-    });
+    // ======================= DATA FETCHING =======================
+    try {
+        const response = await fetch('https://api.safirfuar.com/memories/work-list');
+        const data = await response.json();
 
-    response.json().then(data => {
         if (data.status == 200) {
             data.data.forEach(work => {
                 countryStats.push(work);
-                worldDiv.style.display = "block";
             });
+            worldDiv.style.display = "block";
         }
-    });
+    } catch (err) {
+        console.error("Veri çekme hatası:", err);
+    }
 
-    var countryStats = [];
+    // countryStats dolmadan kodun aşağı devam etmemesini sağladık.
+    if (countryStats.length === 0) return;
 
+    // ======================= D3 SETUP =======================
     const width = 900;
     const height = 800;
 
@@ -151,27 +166,12 @@ setInterval(getWork, 2000);
         .append('svg')
         .attr('viewBox', `0 0 ${width} ${height}`);
 
-    // ======================= SHADOW =======================
-
+    // ======================= SHADOW / GRADIENT =======================
     const defs = svg.append('defs');
-
-    const gradient = defs.append('radialGradient')
-        .attr('id', 'globeGradient');
-
-    gradient.append('stop')
-        .attr('offset', '0%')
-        .attr('stop-color', '#ffffff')
-        .attr('stop-opacity', 0.0);
-
-    gradient.append('stop')
-        .attr('offset', '70%')
-        .attr('stop-color', '#ffffff')
-        .attr('stop-opacity', 0.2);
-
-    gradient.append('stop')
-        .attr('offset', '100%')
-        .attr('stop-color', '#000000')
-        .attr('stop-opacity', 0.05);
+    const gradient = defs.append('radialGradient').attr('id', 'globeGradient');
+    gradient.append('stop').attr('offset', '0%').attr('stop-color', '#ffffff').attr('stop-opacity', 0.0);
+    gradient.append('stop').attr('offset', '70%').attr('stop-color', '#ffffff').attr('stop-opacity', 0.2);
+    gradient.append('stop').attr('offset', '100%').attr('stop-color', '#000000').attr('stop-opacity', 0.05);
 
     svg.append('circle')
         .attr('cx', width / 2)
@@ -180,15 +180,8 @@ setInterval(getWork, 2000);
         .attr('fill', 'url(#globeGradient)');
 
     // ======================= WORLD DATA =======================
-
-    const world = await fetch(
-        'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
-    ).then(res => res.json());
-
-    const countries = topojson.feature(
-        world,
-        world.objects.countries
-    ).features;
+    const world = await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(res => res.json());
+    const countries = topojson.feature(world, world.objects.countries).features;
 
     const g = svg.append('g');
 
@@ -197,128 +190,86 @@ setInterval(getWork, 2000);
         .enter()
         .append('path')
         .attr('class', d => {
-            const hasData = countryStats.some(
-                c => c.country === d.properties.name
-            );
+            const hasData = countryStats.some(c => c.country === d.properties.name);
             return hasData ? 'country data' : 'country';
         })
         .attr('d', path)
         .on('click', (e, d) => selectCountry(d.properties.name));
 
     // ======================= DRAG TO ROTATE =======================
+    svg.call(d3.drag().on('drag', (event) => {
+        const r = projection.rotate();
+        projection.rotate([r[0] + event.dx * 0.25, r[1] - event.dy * 0.25]);
+        g.selectAll('path').attr('d', path);
+    }));
 
-    svg.call(
-        d3.drag().on('drag', (event) => {
-            const r = projection.rotate();
-            projection.rotate([
-                r[0] + event.dx * 0.25,
-                r[1] - event.dy * 0.25
-            ]);
-            g.selectAll('path').attr('d', path);
-        })
-    );
-
-    // ======================= GET USER COUNTRY =======================
-
+    // ======================= HELPER FUNCTIONS =======================
     function detectUserCountry() {
         const lang = navigator.language || '';
-        const map = {
-            tr: 'Turkey',
-            es: 'Spain',
-            de: 'Germany',
-            fr: 'France',
-            it: 'Italy',
-            en: 'United States'
-        };
+        const map = { tr: 'Turkey', es: 'Spain', de: 'Germany', fr: 'France', it: 'Italy', en: 'United States' };
         return map[lang.split('-')[0]] || null;
     }
 
-    // ======================= FOCUS COUNTRY =======================
-
     function focusCountry(feature) {
-        var targetCountry = countryStats.find(c => feature.properties.name == c.country)
-        console.log(feature.properties.name)
-        if (targetCountry == undefined) {
-            targetCountry = countryStats.find(c => c.countryCode == "en")
-        }
+        let targetCountry = countryStats.find(c => feature.properties.name == c.country);
 
-        const [lng, lat] = d3.geoCentroid(feature);
-        const rSlope = (window.innerWidth < 700) ? 1 : 2;
+        if (targetCountry) {
+            const [lng, lat] = d3.geoCentroid(feature);
+            const rSlope = (window.innerWidth < 700) ? 1 : 2;
 
-        d3.transition()
-            .duration(900)
-            .tween('rotate', () => {
-                const r = d3.interpolate(
-                    projection.rotate(),
-                    [-lng, -lat / rSlope]
-                );
+            d3.transition().duration(900).tween('rotate', () => {
+                const r = d3.interpolate(projection.rotate(), [-lng, -lat / rSlope]);
                 return t => {
                     projection.rotate(r(t));
                     g.selectAll('path').attr('d', path);
                 };
             });
 
-        // Country info outputs
+            // DOM Updates
+            document.querySelector('.world-by-us .info-card .country-info .country .name p').textContent = targetCountry.country_lang;
+            document.querySelector('.world-by-us .info-card .country-info .country .flag img').src = `https://countryflagsapi.netlify.app/flag/${targetCountry.countryCode === "en" ? "us" : targetCountry.countryCode}.svg`;
+            document.querySelector('.world-by-us .info-card .country-info .comment p').textContent = targetCountry.comment;
 
-        const countryName = document.querySelector('.world-by-us .info-card .country-info .country .name p')
-        const countryFlag = document.querySelector('.world-by-us .info-card .country-info .country .flag img')
-        const comment = document.querySelector('.world-by-us .info-card .country-info .comment p')
-        const list = document.querySelector('.world-by-us .info-card .country-info .list')
-        const sampleIMG = document.querySelector('.world-by-us .info-card .country-info .sample-img img')
-        const sampleLOC = document.querySelector('.world-by-us .info-card .country-info .sample-img .sample-info p')
-        list.innerHTML = "";
+            const listContainer = document.querySelector('.world-by-us .info-card .country-info .list');
+            listContainer.innerHTML = "";
+            targetCountry.list.forEach(l => {
+                const el = document.createElement('div');
+                el.className = 'el';
+                el.innerHTML = `<p>${l}</p>`;
+                listContainer.appendChild(el);
+            });
 
-        countryName.textContent = targetCountry.country_lang;
-        countryFlag.src = `https://countryflagsapi.netlify.app/flag/${(targetCountry.countryCode == "en") ? "us" : targetCountry.countryCode}.svg`;
-        comment.textContent = targetCountry.comment;
-
-        targetCountry.list.forEach(l => {
-            var el = document.createElement('div');
-            el.classList.add('el');
-
-            el.innerHTML = `<p>${l}</p>`;
-
-            list.appendChild(el);
-        });
-
-        sampleIMG.src = targetCountry.sample.IMG;
-        sampleLOC.textContent = targetCountry.sample.LOC;
+            document.querySelector('.world-by-us .info-card .country-info .sample-img img').src = targetCountry.sample.IMG;
+            document.querySelector('.world-by-us .info-card .country-info .sample-img .sample-info p').textContent = targetCountry.sample.LOC;
+        }
     }
 
     function selectCountry(countryName) {
-        const feature = countries.find(
-            f => f.properties.name === countryName
-        );
+        const feature = countries.find(f => f.properties.name === countryName);
         if (!feature) return;
-
         focusCountry(feature);
-        if (countryStats.find(c => feature.properties.name == c.country)) {
 
-            d3.selectAll('.country')
-                .classed('active', d => d?.properties.name === countryName);
-
+        if (countryStats.some(c => c.country === countryName)) {
+            d3.selectAll('.country').classed('active', d => d?.properties.name === countryName);
             currentCountry = countryName;
         }
     }
 
+    // ======================= INITIALIZE & AUTO-ROTATE =======================
     let currentCountry = null;
-
     const userCountry = detectUserCountry();
-    if (userCountry) {
+
+    // Kullanıcının ülkesinde veri varsa onu seç, yoksa rastgele bir tanesini başlat
+    if (userCountry && countryStats.some(c => c.country === userCountry)) {
         selectCountry(userCountry);
-    }
-
-    function getRandomCountry(exclude) {
-        const list = countryStats
-            .map(c => c.country)
-            .filter(c => c !== exclude);
-
-        if (!list.length) return null;
-        return list[Math.floor(Math.random() * list.length)];
+    } else {
+        const initial = countryStats[Math.floor(Math.random() * countryStats.length)].country;
+        selectCountry(initial);
     }
 
     setInterval(() => {
-        const next = getRandomCountry(currentCountry);
+        const list = countryStats.map(c => c.country).filter(c => c !== currentCountry);
+        const next = list[Math.floor(Math.random() * list.length)];
         if (next) selectCountry(next);
     }, 20000);
 

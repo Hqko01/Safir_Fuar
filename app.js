@@ -34,7 +34,7 @@ function connection(req, res, next) {
     const userLanguages = req.acceptsLanguages();
     req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
 
-    if(req.session.language == undefined) {
+    if (req.session.language == undefined) {
         req.session.language = "tr";
     }
     next();
@@ -406,21 +406,21 @@ function textToHtml(content) {
 }
 
 app.get('/', connection, (req, res) => {
-    res.render(`./pages/${req.session.language}/home/index`);
+    res.render(`./pages/${req.session.language}/home/index`, { "language": req.session.language });
 })
 
 app.get('/pages/:page', connection, (req, res) => {
     var page = req.params.page;
 
     if (fs.existsSync(`./views/pages/${req.session.language}/${page}/index.ejs`)) {
-        res.render(`./pages/${req.session.language}/${page}/index`);
+        res.render(`./pages/${req.session.language}/${page}/index`, { "language": req.session.language });
     }
     else {
         res.redirect(`/`)
     }
 })
 
-app.get('/sitemap.xml',connection, (req, res) => {
+app.get('/sitemap.xml', connection, (req, res) => {
     fs.readFile(`./views/${req.session.language}/sitemap.xml`, (err, data) => {
         if (err) throw err;
         res.send(data)

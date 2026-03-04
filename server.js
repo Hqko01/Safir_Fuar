@@ -23,18 +23,36 @@ app.use(session({
 }));
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
+const acceptedLanguages = [
+    'tr', 'en', 'pt',
+    'es', 'sv', 'de',
+    'nl', 'fr', 'it',
+    'ar'
+];
+
+function connection(req, res, next) {
+    const userLanguages = req.acceptsLanguages();
+    req.session.language = userLanguages.find((usl) => acceptedLanguages.find((acl => usl.toLowerCase() == acl.toLowerCase())));
+
+    if (req.session.language == undefined) {
+        req.session.language = "tr";
+    }
+    next();
+}
+
+app.get('/', connection, (req, res) => {
     res.send('Server is running ');
 });
 
-app.get('/memories/:id', (req, res) => {
+app.get('/memories/:id', connection, (req, res) => {
     const id = req.params.id;
     const filePath = `./public/assets/memories/${id}.json`;
 
     if (fs.existsSync(filePath)) {
         const memoryData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        console.log(req.session.language);
 
-        res.send({ status: 200, data: memoryData });
+        res.send({ status: 200, data: memoryData[req.session.language || 'en'] });
     } else {
         res.status(404).send({ status: 404, message: 'Memory not found' });
     }

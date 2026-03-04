@@ -4,20 +4,149 @@
             <img src="/assets/img/logo/SafirFuarLogo.png" alt="Safir Fuar Logo">
         </div>
         <div class="nav">
-            <div class="options" type="navigation">
-                <div class="option" type="about">
-                    <p>hakkımızda</p>
+            <% switch (language) { case "tr" : %>
+                <div class="options" type="navigation">
+                    <div class="option" type="about">
+                        <p>hakkımızda</p>
+                    </div>
+                    <div class="option" type="contact">
+                        <p>İLETİŞİM</p>
+                    </div>
+                    <div class="option" type="referances">
+                        <p>referanslarımız</p>
+                    </div>
+                    <div class="option" type="gastro">
+                        <p>Gastro</p>
+                    </div>
                 </div>
-                <div class="option" type="contact">
-                    <p>İLETİŞİM</p>
-                </div>
-                <div class="option" type="referances">
-                    <p>referanslarımız</p>
-                </div>
-                <div class="option" type="gastro">
-                    <p>Gastro</p>
-                </div>
-            </div>
+                <% break; case "en" : %>
+                    <div class="options" type="navigation">
+                        <div class="option" type="about">
+                            <p>About Us</p>
+                        </div>
+                        <div class="option" type="contact">
+                            <p>Contact</p>
+                        </div>
+                        <div class="option" type="referances">
+                            <p>References</p>
+                        </div>
+                        <div class="option" type="gastro">
+                            <p>Gastro</p>
+                        </div>
+                    </div>
+                    <% break; case "ar" : %>
+                        <div class="options" type="navigation">
+                            <div class="option" type="about">
+                                <p>معلومات عنا</p>
+                            </div>
+                            <div class="option" type="contact">
+                                <p>اتصل بنا</p>
+                            </div>
+                            <div class="option" type="referances">
+                                <p>المرجعيات</p>
+                            </div>
+                            <div class="option" type="gastro">
+                                <p>غاسترو</p>
+                            </div>
+                        </div>
+                        <% break; case "de" : %>
+                            <div class="options" type="navigation">
+                                <div class="option" type="about">
+                                    <p>Über uns</p>
+                                </div>
+                                <div class="option" type="contact">
+                                    <p>Kontakt</p>
+                                </div>
+                                <div class="option" type="referances">
+                                    <p>Referenzen</p>
+                                </div>
+                                <div class="option" type="gastro">
+                                    <p>Gastro</p>
+                                </div>
+                            </div>
+                            <% break; case "es" : %>
+                                <div class="options" type="navigation">
+                                    <div class="option" type="about">
+                                        <p>Acerca de nosotros</p>
+                                    </div>
+                                    <div class="option" type="contact">
+                                        <p>Contacto</p>
+                                    </div>
+                                    <div class="option" type="referances">
+                                        <p>Referencias</p>
+                                    </div>
+                                    <div class="option" type="gastro">
+                                        <p>Gastro</p>
+                                    </div>
+                                </div>
+                                <% break; case "fr" : %>
+                                    <div class="options" type="navigation">
+                                        <div class="option" type="about">
+                                            <p>À propos de nous</p>
+                                        </div>
+                                        <div class="option" type="contact">
+                                            <p>Contact</p>
+                                        </div>
+                                        <div class="option" type="referances">
+                                            <p>Références</p>
+                                        </div>
+                                        <div class="option" type="gastro">
+                                            <p>Gastro</p>
+                                        </div>
+                                    </div>
+                                    <% break; case "it" : %>
+                                        <div class="option" type="about">
+                                            <p>Chi Siamo</p>
+                                        </div>
+                                        <div class="option" type="contact">
+                                            <p>Contatti</p>
+                                        </div>
+                                        <div class="option" type="referances">
+                                            <p>Referenze</p>
+                                        </div>
+                                        <div class="option" type="gastro">
+                                            <p>Gastro</p>
+                                        </div>
+                                        <% break; case "nl" : %>
+                                            <div class="option" type="about">
+                                                <p>Over ons</p>
+                                            </div>
+                                            <div class="option" type="contact">
+                                                <p>Contact</p>
+                                            </div>
+                                            <div class="option" type="referances">
+                                                <p>Referenties</p>
+                                            </div>
+                                            <div class="option" type="gastro">
+                                                <p>Gastro</p>
+                                            </div>
+                                            <% break; case "pt" : %>
+                                                <div class="option" type="about">
+                                                    <p>Sobre nós</p>
+                                                </div>
+                                                <div class="option" type="contact">
+                                                    <p>Contato</p>
+                                                </div>
+                                                <div class="option" type="referances">
+                                                    <p>Referências</p>
+                                                </div>
+                                                <div class="option" type="gastro">
+                                                    <p>Gastro</p>
+                                                </div>
+                                                <% break; case "sv" : %>
+                                                    <div class="option" type="about">
+                                                        <p>Om oss</p>
+                                                    </div>
+                                                    <div class="option" type="contact">
+                                                        <p>Kontakt</p>
+                                                    </div>
+                                                    <div class="option" type="referances">
+                                                        <p>Referenser</p>
+                                                    </div>
+                                                    <div class="option" type="gastro">
+                                                        <p>Gastro</p>
+                                                    </div>
+                                                    <% break; }%>
         </div>
         <div class="mobil">
             <div class="mobil-nav">
@@ -39,18 +168,149 @@
                 </div>
                 <div class="nav-content">
                     <div class="options" type="navigation">
-                        <div class="option" type="about">
-                            <p>hakkımızda</p>
-                        </div>
-                        <div class="option" type="contact">
-                            <p>İLETİŞİM</p>
-                        </div>
-                        <div class="option" type="referances">
-                            <p>referanslarımız</p>
-                        </div>
-                        <div class="option" type="gastro">
-                            <p>Gastro</p>
-                        </div>
+                        <% switch (language) { case "tr" : %>
+                            <div class="options" type="navigation">
+                                <div class="option" type="about">
+                                    <p>hakkımızda</p>
+                                </div>
+                                <div class="option" type="contact">
+                                    <p>İLETİŞİM</p>
+                                </div>
+                                <div class="option" type="referances">
+                                    <p>referanslarımız</p>
+                                </div>
+                                <div class="option" type="gastro">
+                                    <p>Gastro</p>
+                                </div>
+                            </div>
+                            <% break; case "en" : %>
+                                <div class="options" type="navigation">
+                                    <div class="option" type="about">
+                                        <p>About Us</p>
+                                    </div>
+                                    <div class="option" type="contact">
+                                        <p>Contact</p>
+                                    </div>
+                                    <div class="option" type="referances">
+                                        <p>References</p>
+                                    </div>
+                                    <div class="option" type="gastro">
+                                        <p>Gastro</p>
+                                    </div>
+                                </div>
+                                <% break; case "ar" : %>
+                                    <div class="options" type="navigation">
+                                        <div class="option" type="about">
+                                            <p>معلومات عنا</p>
+                                        </div>
+                                        <div class="option" type="contact">
+                                            <p>اتصل بنا</p>
+                                        </div>
+                                        <div class="option" type="referances">
+                                            <p>المرجعيات</p>
+                                        </div>
+                                        <div class="option" type="gastro">
+                                            <p>غاسترو</p>
+                                        </div>
+                                    </div>
+                                    <% break; case "de" : %>
+                                        <div class="options" type="navigation">
+                                            <div class="option" type="about">
+                                                <p>Über uns</p>
+                                            </div>
+                                            <div class="option" type="contact">
+                                                <p>Kontakt</p>
+                                            </div>
+                                            <div class="option" type="referances">
+                                                <p>Referenzen</p>
+                                            </div>
+                                            <div class="option" type="gastro">
+                                                <p>Gastro</p>
+                                            </div>
+                                        </div>
+                                        <% break; case "es" : %>
+                                            <div class="options" type="navigation">
+                                                <div class="option" type="about">
+                                                    <p>Acerca de nosotros</p>
+                                                </div>
+                                                <div class="option" type="contact">
+                                                    <p>Contacto</p>
+                                                </div>
+                                                <div class="option" type="referances">
+                                                    <p>Referencias</p>
+                                                </div>
+                                                <div class="option" type="gastro">
+                                                    <p>Gastro</p>
+                                                </div>
+                                            </div>
+                                            <% break; case "fr" : %>
+                                                <div class="options" type="navigation">
+                                                    <div class="option" type="about">
+                                                        <p>À propos de nous</p>
+                                                    </div>
+                                                    <div class="option" type="contact">
+                                                        <p>Contact</p>
+                                                    </div>
+                                                    <div class="option" type="referances">
+                                                        <p>Références</p>
+                                                    </div>
+                                                    <div class="option" type="gastro">
+                                                        <p>Gastro</p>
+                                                    </div>
+                                                </div>
+                                                <% break; case "it" : %>
+                                                    <div class="option" type="about">
+                                                        <p>Chi Siamo</p>
+                                                    </div>
+                                                    <div class="option" type="contact">
+                                                        <p>Contatti</p>
+                                                    </div>
+                                                    <div class="option" type="referances">
+                                                        <p>Referenze</p>
+                                                    </div>
+                                                    <div class="option" type="gastro">
+                                                        <p>Gastro</p>
+                                                    </div>
+                                                    <% break; case "nl" : %>
+                                                        <div class="option" type="about">
+                                                            <p>Over ons</p>
+                                                        </div>
+                                                        <div class="option" type="contact">
+                                                            <p>Contact</p>
+                                                        </div>
+                                                        <div class="option" type="referances">
+                                                            <p>Referenties</p>
+                                                        </div>
+                                                        <div class="option" type="gastro">
+                                                            <p>Gastro</p>
+                                                        </div>
+                                                        <% break; case "pt" : %>
+                                                            <div class="option" type="about">
+                                                                <p>Sobre nós</p>
+                                                            </div>
+                                                            <div class="option" type="contact">
+                                                                <p>Contato</p>
+                                                            </div>
+                                                            <div class="option" type="referances">
+                                                                <p>Referências</p>
+                                                            </div>
+                                                            <div class="option" type="gastro">
+                                                                <p>Gastro</p>
+                                                            </div>
+                                                            <% break; case "sv" : %>
+                                                                <div class="option" type="about">
+                                                                    <p>Om oss</p>
+                                                                </div>
+                                                                <div class="option" type="contact">
+                                                                    <p>Kontakt</p>
+                                                                </div>
+                                                                <div class="option" type="referances">
+                                                                    <p>Referenser</p>
+                                                                </div>
+                                                                <div class="option" type="gastro">
+                                                                    <p>Gastro</p>
+                                                                </div>
+                                                                <% break; }%>
                     </div>
                 </div>
             </div>
