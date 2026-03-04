@@ -778,6 +778,7 @@
     box-shadow: 0 0 2px rgb(190, 190, 190);
     border-bottom-left-radius: 1pc;
     border-bottom-right-radius: 1pc;
+    display: none;
 }
 
 .world-by-us .info-card .global-info::before {
